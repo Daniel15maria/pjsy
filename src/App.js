@@ -8,8 +8,6 @@ import { Donate } from './components/donate/donate';
 import { ProgamsPage } from './components/programs/ProgamsPage';
 import HerosPage from './components/heros/HerosPage';
 import GalleryPage from './components/gallery/galler_page';
-import HashRouter from 'hash-router';
-
 
 function App() {
   return (
