@@ -12,7 +12,7 @@ import GalleryPage from './components/gallery/galler_page';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/donate' element={<Donate />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
