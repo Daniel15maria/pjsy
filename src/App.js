@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from './components/home/home_page';
 import { NavBar } from './components/resuable/nav';
 import { AboutUsPage } from './components/about/aboutus_page';
@@ -8,6 +8,7 @@ import { Donate } from './components/donate/donate';
 import { ProgamsPage } from './components/programs/ProgamsPage';
 import HerosPage from './components/heros/HerosPage';
 import GalleryPage from './components/gallery/galler_page';
+import HashRouter from 'hash-router';
 
 
 function App() {
