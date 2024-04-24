@@ -3,9 +3,11 @@ import { Container, Button, Col, Row } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaPhone } from 'react-icons/fa';
 import { Person, Envelope, Telephone, Location, Pin } from 'react-bootstrap-icons';
 import logo from '../images/logo.png';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Footer = () => {
+    const navigate = useNavigate();
     return (
 
         <footer>
@@ -35,13 +37,14 @@ export const Footer = () => {
 
                     <Col lg={3} className='d-none d-sm-block'>
                         <div className='d-flex align-items-center justify-content-center'>
-                            <ul class="footer-nav">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about">About Us</a></li>
-                                <li><a href="/programs">Programms</a></li>
-                                <li><a href="/heros">Heros</a></li>
-                                <li><a href="/gallery">Gallery</a></li>
-                                <li><a href="/donate">Donate</a></li>
+                            <ul className="footer-nav footer-navbutton">
+                                <li><button onClick={() => navigate('/')}>Home</button></li>
+                                <li><button onClick={() => navigate('/about')}>About us</button></li>
+                                <li><button onClick={() => navigate('/programs')}>programs</button></li>
+                                <li><button onClick={() => navigate('/heros')}>Heroes</button></li>
+                                <li><button onClick={() => navigate('/gallery')}>Gallery</button></li>
+                                <li><button onClick={() => navigate('#!')}>Contact Us</button></li>
+                                <li><button className="footer-navbutton footer-nav" onClick={() => navigate('/donate')}>Donate Us</button></li>
                             </ul>
                         </div>
 

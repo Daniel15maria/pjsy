@@ -3,8 +3,10 @@ import { Navbar, Container, Nav, Button, Modal, Form, Toast } from 'react-bootst
 import { FaEnvelope, FaUser, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from '../images/logo.png';
 import '../../index.css';
+import { useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
+    const navigate = useNavigate();
     const [lgShow, setLgShow] = useState(false);
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -102,14 +104,22 @@ export const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="/" className='navpaths nav-text'>Home</Nav.Link>
-                        <Nav.Link href="/#about" className='navpaths'>About Us</Nav.Link>
-                        <Nav.Link href="/#programs" className='navpaths'>Programs</Nav.Link>
-                        <Nav.Link href="/#heros" className='navpaths'>Heroes</Nav.Link>
-                        <Nav.Link href="/#gallery" className='navpaths'>Gallery</Nav.Link>
-                        <Nav.Link href="#!" className='navpaths' onClick={() => setLgShow(true)}>Contact Us</Nav.Link>
+                        {/* <Nav.Link href="/" className='navpaths nav-text'>Home</Nav.Link> */}
+                        {/* <Nav.Link href="/#about" className='navpaths'>About Us</Nav.Link> */}
+                        {/* <Nav.Link href="/#programs" className='navpaths'>Programs</Nav.Link> */}
+                        {/* <Nav.Link href="/#heros" className='navpaths'>Heroes</Nav.Link> */}
+                        {/* <Nav.Link href="/#gallery" className='navpaths'>Gallery</Nav.Link> */}
+                        {/* <Nav.Link href="#!" className='navpaths' onClick={() => setLgShow(true)}>Contact Us</Nav.Link> */}
+                        <button className='navpaths nav-text' onClick={() => navigate('/')}>Home</button>
+                        <button className='navpaths nav-text' onClick={() => navigate('/about')}>About us</button>
+                        <button className='navpaths nav-text' onClick={() => navigate('/programs')}>programs</button>
+                        <button className='navpaths nav-text' onClick={() => navigate('/heros')}>Heroes</button>
+                        <button className='navpaths nav-text' onClick={() => navigate('/gallery')}>Gallery</button>
+                        <button className='navpaths nav-text' onClick={() => setLgShow(true) > navigate('#!')}>Contact Us</button>
                     </Nav>
-                    <Button href='/donate' variant="outline-primary">Donate</Button>
+
+
+                    <Button onClick={() => navigate('/donate')} variant="outline-primary">Donate</Button>
                 </Navbar.Collapse>
             </Container>
 

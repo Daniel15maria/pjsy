@@ -74,6 +74,8 @@ section {
 
   color: rgb(96, 96, 96) !important;
   font-size: 17px !important;
+  border: none;
+  outline: none;
 }
 
 .heading1 {
@@ -120,6 +122,14 @@ footer {
 
 .footer-nav {
   list-style-type: none;
+
+}
+
+.footer-navbutton {
+  background-color: #124076;
+  color: white;
+  border: none;
+  outline: none;
 }
 
 .social-links {
@@ -137,6 +147,7 @@ footer {
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
+.footer-navbutton a:link,
 .social-links li a:visited {
   text-decoration: underline;
   text-decoration-color: #FFC374;
