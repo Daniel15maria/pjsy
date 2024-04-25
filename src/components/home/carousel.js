@@ -12,19 +12,19 @@ function CarouselHeader() {
     const slides = [
         {
             image: carousel1,
-            heading: ['SAINUMA\'s Symphony', ' From Burden to Beacon'],
+            heading: ['Sainuma\'s Symphony', ' From Burden to Beacon'],
             buttonText: 'Read More',
             buttonVariant: 'outline-primary'
         },
         {
             image: carousel2,
-            heading: ['Rising from Ashes:', 'The AVINASH MAHATO Story'],
+            heading: ['The Avinash Mahato Story', 'Rising From Ashes'],
             buttonText: 'Read More',
             buttonVariant: 'outline-primary'
         },
         {
             image: carousel3,
-            heading: ['LOVELY KUMARI\'s Journey:', 'From Fragility to Strength'],
+            heading: ['Lovely Kumari\'s Journey:', 'From Fragility to Strength'],
             buttonText: 'Read More',
             buttonVariant: 'outline-primary'
         }
