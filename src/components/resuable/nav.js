@@ -110,12 +110,24 @@ export const NavBar = () => {
                         {/* <Nav.Link href="/#heros" className='navpaths'>Heroes</Nav.Link> */}
                         {/* <Nav.Link href="/#gallery" className='navpaths'>Gallery</Nav.Link> */}
                         {/* <Nav.Link href="#!" className='navpaths' onClick={() => setLgShow(true)}>Contact Us</Nav.Link> */}
-                        <button className='navpaths nav-text' onClick={() => navigate('/')}>Home</button>
-                        <button className='navpaths nav-text' onClick={() => navigate('/about')}>About us</button>
-                        <button className='navpaths nav-text' onClick={() => navigate('/programs')}>programs</button>
-                        <button className='navpaths nav-text' onClick={() => navigate('/heros')}>Heroes</button>
-                        <button className='navpaths nav-text' onClick={() => navigate('/gallery')}>Gallery</button>
-                        <button className='navpaths nav-text' onClick={() => setLgShow(true) > navigate('#!')}>Contact Us</button>
+                        <Button variant='transparent' onClick={() => navigate('/')}>
+                            <div className='navpaths nav-text'>Home</div>
+                        </Button>
+                        <Button variant='transparent' onClick={() => navigate('/about')}>
+                            <div className='navpaths nav-text'>About us</div>
+                        </Button>
+                        <Button variant='transparent' onClick={() => navigate('/programs')}>
+                            <div className='navpaths nav-text'> Programs</div>
+                        </Button>
+                        <Button variant='transparent' onClick={() => navigate('/heros')}>
+                            <div className='navpaths nav-text'></div>  Heroes
+                        </Button>
+                        <Button variant='transparent' onClick={() => navigate('/gallery')}>
+                            <div className='navpaths nav-text'>Galry</div>
+                        </Button>
+                        <Button variant='transparent' onClick={() => setLgShow(true) > navigate('#!')}>
+                            <div className='navpaths nav-text'>Contact Us</div>
+                        </Button>
                     </Nav>
 
 

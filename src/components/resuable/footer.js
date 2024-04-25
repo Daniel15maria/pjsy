@@ -5,11 +5,9 @@ import { Person, Envelope, Telephone, Location, Pin } from 'react-bootstrap-icon
 import logo from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
 
-
 export const Footer = () => {
     const navigate = useNavigate();
     return (
-
         <footer>
             <Container className='py-4'>
                 <Row>
@@ -38,20 +36,22 @@ export const Footer = () => {
                     <Col lg={3} className='d-none d-sm-block'>
                         <div className='d-flex align-items-center justify-content-center'>
                             <ul className="footer-nav footer-navbutton">
-                                <li><button onClick={() => navigate('/')}>Home</button></li>
-                                <li><button onClick={() => navigate('/about')}>About us</button></li>
-                                <li><button onClick={() => navigate('/programs')}>programs</button></li>
-                                <li><button onClick={() => navigate('/heros')}>Heroes</button></li>
-                                <li><button onClick={() => navigate('/gallery')}>Gallery</button></li>
-                                <li><button onClick={() => navigate('#!')}>Contact Us</button></li>
-                                <li><button className="footer-navbutton footer-nav" onClick={() => navigate('/donate')}>Donate Us</button></li>
+                                <li><Button variant='transparent p-0' onClick={() => navigate('/')}>
+                                    <div className='footer-nav footer-navbutton'>Home</div>
+                                </Button></li>
+                                <li><Button variant='transparent p-0' onClick={() => navigate('/about')}> <div className='footer-nav footer-navbutton'>About</div></Button></li>
+                                <li><Button variant='transparent p-0' onClick={() => navigate('/programs')}> <div className='footer-nav footer-navbutton'>Pograms</div></Button></li>
+                                <li><Button variant='transparent p-0' onClick={() => navigate('/heros')}> <div className='footer-nav footer-navbutton'>Heros</div></Button>  </li>
+                                <li><Button variant='transparent p-0' onClick={() => navigate('/gallery')}> <div className='footer-nav footer-navbutton'>Gallery</div></Button></li>
+                                <li><Button variant='transparent p-0' onClick={() => navigate('#!')}> <div className='footer-nav footer-navbutton'>Contact Us</div></Button></li>
+                                <li><Button className="footer-navbutton footer-nav" variant='transparent p-0' onClick={() => navigate('/donate')}> <div className='footer-nav footer-navbutton'>Donate</div></Button></li>
                             </ul>
                         </div>
 
                     </Col>
                     <Col lg={4} sm={12}>
                         <div>
-                            <ul class="footer-nav">
+                            <ul style={{ listStyleType: 'none' }}>
                                 <li><Person />Fr. JOYSON FERNANDES SJ</li>
                                 <li><Telephone /> +91 9871528965</li>
                                 <li><Telephone />+91 9939447576</li>

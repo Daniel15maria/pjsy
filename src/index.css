@@ -52,7 +52,6 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-
 section {
   height: 100vh;
   overflow: hidden;
@@ -144,11 +143,7 @@ footer {
 }
 
 
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a:link,
-.footer-navbutton a:link,
-.social-links li a:visited {
+.footer-nav {
   text-decoration: underline;
   text-decoration-color: #FFC374;
   border: 0;
@@ -160,7 +155,7 @@ footer {
   font-size: 100%;
 }
 
-.footer-nav li a:hover,
+.footer-nav:hover,
 .social-links li a:hover {
   color: #ddd;
   text-decoration: none;
