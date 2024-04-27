@@ -4,8 +4,9 @@ import progbg from '../images/progimg.png';
 import { Footer } from '../resuable/footer';
 import prog1 from '../images/Prog/prog1.png';
 import { motion } from 'framer-motion';
-import prog2 from '../images/Prog/leadership.jpg';
-import prog3 from '../images/Gallery/65.jpg';
+import prog2 from '../images/Prog/prog2/img1.png';
+import prog3 from '../images/Prog/prog3.png';
+import prog4 from '../images/Prog/prog4/img1.png';
 import { useNavigate } from 'react-router-dom';
 
 const upvariants = {
@@ -44,7 +45,7 @@ const programData = [
         progUrl: '/magis2022'
     },
     {
-        img: prog1,
+        img: prog4,
         title: "WORLD YOUTH DAY - 2023",
         text: "To sensitize students to establish 'a hope-filled future', to orient youth towards their role in Nation Building and to motivate the students to be the change and bring difference in the society wherever one is placed.",
         progUrl: '/youthDay'
@@ -60,7 +61,7 @@ const programData = [
 export const ProgamsPage = () => {
     const navigate = useNavigate();
     return (
-        <div className='justify-text'>
+        <div>
             <img alt="Programs Background Image" src={progbg} className="w-100 vh-50" />
             <motion.div variants={upvariants} initial="initial" whileInView="animate"
                 className='each-head d-flex justify-content-center my-4'>Programs</motion.div>
