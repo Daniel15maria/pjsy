@@ -53,7 +53,7 @@ const MagisPage = () => {
             <div style={{ backgroundColor: "#124076", color: "white" }}>
                 <Container className='d-flex justify-content-center align-items-center'>
                     <Row className='mt-5'>
-                        <h1>About MAGIS</h1>
+                        <h1>~ About MAGIS ~</h1>
                     </Row>
                 </Container>
                 <Container className='d-flex justify-content-center align-items-center'>
@@ -80,9 +80,8 @@ const MagisPage = () => {
             </div>
             <Container className='d-flex justify-content-center align-items-center'>
                 <Row>
-                    <p className='each-subhead2'> Overall Rating: <span><progress value={0.8} /></span></p>
+                    <p className='each-subhead2'> Overall Rating: <span><progress value={0.8} /> 9.5/10</span></p>
                 </Row>
-
             </Container>
 
             <Footer />
