@@ -162,7 +162,7 @@ export const NavBar = () => {
                         </div>
                         <div className="d-flex align-items-center mb-3">
                             <FaEnvelope className="me-2" />
-                            <span> pjsympatna@gmail.com</span>
+                            <span>pjsym1975@gmail.com</span>
                         </div>
                         <div className="d-flex align-items-center">
                             <FaMapMarkerAlt className="me-2" />
