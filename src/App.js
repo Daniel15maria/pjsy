@@ -12,6 +12,7 @@ import MagisPage2023 from './components/programs/MagisPage2023';
 import AnimatorPage from './components/programs/AnimatorPage';
 import YouthMinistry from './components/programs/YouthMinistry';
 import YouthCommision from './components/programs/YouthCommision';
+import WorldYouth from './components/programs/WorldYouth';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <Route path='/animator' element={<AnimatorPage />} ></Route>
         <Route path='/commissionMeet' element={<YouthMinistry />} ></Route>
         <Route path='/magis2022' element={<YouthCommision />} ></Route>
-        <Route path='//youthDay' element={<WorldYouth />} ></Route>
+        <Route path='/youthDay' element={<WorldYouth />} ></Route>
 
       </Routes>
     </HashRouter>
