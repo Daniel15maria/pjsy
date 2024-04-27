@@ -6,7 +6,7 @@ import '../../index.css';
 
 const AnimatorPage = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <div style={{ backgroundColor: '#F6ECDA' }}>
                 <Container className='d-flex justify-content-center align-items-center'>
                     <Row className='mt-5'>

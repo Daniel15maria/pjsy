@@ -2,7 +2,6 @@ import React from 'react'
 import '../../index.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import topleft1 from '../images/topleft1.png'
-import botright1 from '../images/botright1.png'
 import director from '../images/director.png';
 import { motion } from 'framer-motion';
 

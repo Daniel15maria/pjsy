@@ -9,7 +9,7 @@ import youthright from '../images/Prog/prog2/img3.png'
 
 const YouthMinistry = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <div style={{ backgroundColor: '#F6ECDA' }}>
 
                 <Container className='d-flex justify-content-center align-items-center'>

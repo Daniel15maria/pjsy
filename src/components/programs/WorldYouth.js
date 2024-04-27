@@ -8,7 +8,7 @@ import youthdown from '../images/Prog/prog4/img2.png'
 
 const YouthMinistry = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <div style={{ backgroundColor: '#F6ECDA' }}>
 
                 <Container className='d-flex justify-content-center align-items-center'>

@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import prog2 from '../images/Prog/prog2/img1.png';
 import prog3 from '../images/Prog/prog3.png';
 import prog4 from '../images/Prog/prog4/img1.png';
+import prog5 from '../images/Prog/magis/magis3.png';
 import { useNavigate } from 'react-router-dom';
 
 const upvariants = {
@@ -28,32 +29,32 @@ const programData = [
     {
         img: prog1,
         title: "Youth Animator Training Program",
-        text: "The Patna Jesuit Youth Commission organized “Youth Animators training Program” in Atmadarshan from 31st May to 4th June 2023",
+        text: "The Patna Jesuit Youth Commission organized “Youth Animators training Program” in Atmadarshan from 31st May to 4th June 2023 .....",
         progUrl: "/animator"
 
     },
     {
         img: prog2,
         title: "Youth Ministry Commission Meeting",
-        text: "We had the youth commission meeting from 10th-12th March 2023 in Vidya Niwas, Varanasi. It was a very fruitful meeting as we have planned meticulously for the forthcoming year",
+        text: "We had the youth commission meeting from 10th-12th March 2023 in Vidya Niwas, Varanasi. It was a very fruitful meeting as we have planned meticulously for the forthcoming year .....",
         progUrl: '/commissionMeet'
     },
     {
         img: prog3,
         title: "YOUTH COMMISSION MAGIS 2022",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreu",
+        text: "Great minds discuss ideas, average minds discuss events and small minds discuss people. - Eleanor Roosevelt Indeed, the wordings of Roosevelt .....",
         progUrl: '/magis2022'
     },
     {
         img: prog4,
         title: "WORLD YOUTH DAY - 2023",
-        text: "To sensitize students to establish 'a hope-filled future', to orient youth towards their role in Nation Building and to motivate the students to be the change and bring difference in the society wherever one is placed.",
+        text: "We had MAGIS LISBON 2023 and World Youth Day in July and August 2023 in Portugal. We were 41 members from JCSA delegation (35 Youth and 6 Jesuits from different .....",
         progUrl: '/youthDay'
     },
     {
-        img: prog1,
+        img: prog5,
         title: "MAGIS 2023",
-        text: "To sensitize students to establish 'a hope-filled future', to orient youth towards their role in Nation Building and to motivate the students to be the change and bring difference in the society wherever one is placed.",
+        text: "MAGIS 2023, was a four days event, which proved to be a transformative and enriching experience for all Magis participants all over India and Nepal. Rooted in the Ignatian tradition of seeking excellence .....",
         progUrl: "/magis2023"
     },
 ];
