@@ -38,6 +38,15 @@ header {
   line-height: normal;
 }
 
+.each-subhead2 {
+  color: #487D49;
+  font-family: "Inknut Antiqua";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .image-container {
   position: relative;
 }
@@ -55,7 +64,6 @@ header {
 section {
   height: 100vh;
   overflow: hidden;
-
 }
 
 .navcont {
@@ -154,11 +162,7 @@ footer {
 .social-links li a:link,
 .social-links li a:visited {
   font-size: 100%;
-<<<<<<< HEAD
   color: white;
-=======
-  color: #F5F5F5;
->>>>>>> bbac45a7aa0ca8eee02b88c3a97f442c40dcb41e
 }
 
 .footer-nav:hover,

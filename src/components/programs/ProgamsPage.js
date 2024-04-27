@@ -6,6 +6,7 @@ import prog1 from '../images/Prog/magis.png';
 import { motion } from 'framer-motion';
 import prog2 from '../images/Prog/leadership.jpg';
 import prog3 from '../images/Gallery/65.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const upvariants = {
     initial: {
@@ -31,31 +32,17 @@ const programData = [
     {
         img: prog2,
         title: "Leadership Training Program",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor"
+        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Lor"
     },
     {
         img: prog3,
         title: "Summer Skill Dev Program",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor"
+        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreu"
     },
-    {
-        img: prog1,
-        title: "Card 4",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor"
-    },
-    {
-        img: prog1,
-        title: "Card 5",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor"
-    },
-    {
-        img: prog1,
-        title: "Card 6",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content.Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor Loreum Ipsom Idor"
-    }
 ];
 
 export const ProgamsPage = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <img alt="Programs Background Image" src={progbg} className="w-100 vh-50" />
@@ -69,7 +56,7 @@ export const ProgamsPage = () => {
                                 img={program.img}
                                 title={program.title}
                                 text={program.text}
-                                index={index} // Pass the index as a prop
+                                index={index}
                             />
                         </Col>
                     ))}
@@ -82,7 +69,7 @@ export const ProgamsPage = () => {
 
 const ProgramCard = ({ img, title, text, index }) => {
     const delay = index * 0.5; // Calculate the delay based on index
-
+    const navigate = useNavigate();
     return (
         <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -95,6 +82,7 @@ const ProgramCard = ({ img, title, text, index }) => {
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{text}</Card.Text>
+                    <Button onClick={() => navigate('/magis')}>Read More</Button>
                 </Card.Body>
             </Card>
         </motion.div>
