@@ -21,6 +21,11 @@ header {
   background-attachment: fixed;
 }
 
+.justify-text {
+  text-align: justify !important;
+}
+
+
 .each-head {
   color: #124076;
   font-size: 56.56px;

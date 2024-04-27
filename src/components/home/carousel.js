@@ -33,7 +33,7 @@ function CarouselHeader() {
 
     return (
         <header>
-            <Carousel interval={1500} pause={false} controls={false}>
+            <Carousel interval={3000} pause={false} controls={false}>
                 {slides.map((slide, index) => (
                     <Carousel.Item key={index} style={{ overflow: 'hidden' }}>
                         <div className="image-container">

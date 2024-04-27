@@ -21,7 +21,7 @@ export const Footer = () => {
                 <Row className='mt-2'>
                     <Col lg={5} sm={12}>
                         <div>
-                            <p>The Patna Youth Society, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
+                            <p>The Patna Jesuit Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
                                 Through programs and initiatives focused on personal growth and community engagement,
                                 we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.</p>
                             <ul className="social-links ">
@@ -52,7 +52,7 @@ export const Footer = () => {
                     <Col lg={4} sm={12}>
                         <div>
                             <ul style={{ listStyleType: 'none' }}>
-                                <li><Person />Fr. JOYSON FERNANDES SJ</li>
+                                <li><Person />Fr. Anthony Prakash SJ</li>
                                 <li><Telephone /> +91 9871528965</li>
                                 <li><Telephone />+91 9939447576</li>
                                 <br></br>

@@ -7,8 +7,8 @@ import AboutDec from './aboutDecPage';
 
 export const AboutUsPage = () => {
     return (
-        <div>
-            <img alt="mission img" src={aboutbg} className="img-fluid w-100" />
+        <div className='justify-text'>
+            <img alt="mission img" src={aboutbg} className="img-fluid w-100 " />
             <AboutDec />
             <FullMissVissPage />
             <HistoryComp />
