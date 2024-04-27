@@ -12,8 +12,8 @@ const MagisPage2023 = () => {
             <img alt="Programs Background Image" src={magisbg} className="img-fluid w-100" />
             <div style={{ backgroundColor: '#F6ECDA' }} >
                 <Container className='d-flex justify-content-center align-items-center'>
-                    <Row className='mt-5'>
-                        <h1>~ About MAGIS ~</h1>
+                    <Row className='mt-5 each-head2'>
+                        <h1 > About MAGIS </h1>
                     </Row>
                 </Container>
                 <Container className='d-flex justify-content-center align-items-center'>

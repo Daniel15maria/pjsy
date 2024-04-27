@@ -13,6 +13,8 @@ import AnimatorPage from './components/programs/AnimatorPage';
 import YouthMinistry from './components/programs/YouthMinistry';
 import YouthCommision from './components/programs/YouthCommision';
 import WorldYouth from './components/programs/WorldYouth';
+import AvinashPage from './components/heros/AvinashPage';
+import KumariPage from './components/heros/KumariPage';
 
 function App() {
   return (
@@ -25,12 +27,16 @@ function App() {
         <Route path='/heros' element={<HerosPage />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/donate' element={<Donate />} />
-        <Route path='/sainuma' element={<SainumaPage />} ></Route>
+
         <Route path='/magis2023' element={<MagisPage2023 />} ></Route>
         <Route path='/animator' element={<AnimatorPage />} ></Route>
         <Route path='/commissionMeet' element={<YouthMinistry />} ></Route>
         <Route path='/magis2022' element={<YouthCommision />} ></Route>
         <Route path='/youthDay' element={<WorldYouth />} ></Route>
+
+        <Route path='/sainuma' element={<SainumaPage />} ></Route>
+        <Route path='/avinash' element={<AvinashPage />} ></Route>
+        <Route path='/kumari' element={<KumariPage />} ></Route>
 
       </Routes>
     </HashRouter>
