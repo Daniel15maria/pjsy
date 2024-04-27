@@ -72,6 +72,7 @@ export const ProgamsPage = () => {
                                 img={program.img}
                                 title={program.title}
                                 text={program.text}
+                                progUrl={program.progUrl}
                                 index={index}
                             />
                         </Col>
@@ -83,24 +84,19 @@ export const ProgamsPage = () => {
     )
 };
 
-const ProgramCard = ({ img, title, text, progUrl, index }) => {
-    const delay = index * 0.5; // Calculate the delay based on index
+
+const ProgramCard = ({ img, title, text, progUrl }) => {
     const navigate = useNavigate();
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay }} // Apply delay to each card
-            className="mb-4"
-        >
-            <Card style={{ width: '100%', height: '400px' }}> {/* Adjust the height as needed */}
-                <Card.Img variant="top" src={img} style={{ height: '200px', objectFit: 'cover' }} /> {/* Set image height and maintain aspect ratio */}
+        <div className="mb-4">
+            <Card style={{ width: '100%', height: '400px' }}>
+                <Card.Img variant="top" src={img} style={{ height: '200px', objectFit: 'cover' }} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{text}</Card.Text>
-                    <Button onClick={() => navigate('/magis2023')}>Read More</Button>
+                    <Button onClick={() => navigate(progUrl)}>Read More</Button>
                 </Card.Body>
             </Card>
-        </motion.div>
+        </div>
     );
 };
