@@ -78,6 +78,13 @@ const MagisPage = () => {
                     </Row>
                 </Container>
             </div>
+            <Container className='d-flex justify-content-center align-items-center'>
+                <Row>
+                    <p className='each-subhead2'> Overall Rating: <span><progress value={0.8} /></span></p>
+                </Row>
+
+            </Container>
+
             <Footer />
         </div>
     );
