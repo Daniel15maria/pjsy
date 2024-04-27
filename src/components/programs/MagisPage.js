@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import magisbg from '../images/Prog/magis/magis1.png';
 import magisSide from '../images/Prog/magis/magis2.png';
 import magisCenter from '../images/Prog/magis/magis3.png';
@@ -49,7 +49,6 @@ const MagisPage = () => {
                     </Row>
                 </Container>
             </section>
-
             <div style={{ backgroundColor: "#124076", color: "white" }}>
                 <Container className='d-flex justify-content-center align-items-center'>
                     <Row className='mt-5'>
@@ -80,7 +79,7 @@ const MagisPage = () => {
             </div>
             <Container className='d-flex justify-content-center align-items-center'>
                 <Row>
-                    <p className='each-subhead2'> Overall Rating: <span><progress value={0.8} /> 9.5/10</span></p>
+                    <p className='each-subhead2'> Overall Rating: <span style={{ verticalAlign: 'middle', marginLeft: '5px' }}><progress value={0.8} /></span> <Button variant='secondary'>9.5/10</Button></p>
                 </Row>
             </Container>
 
