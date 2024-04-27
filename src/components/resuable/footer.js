@@ -24,7 +24,7 @@ export const Footer = () => {
                             <p>The Patna Youth Society, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
                                 Through programs and initiatives focused on personal growth and community engagement,
                                 we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.</p>
-                            <ul className="social-links">
+                            <ul className="social-links ">
                                 <li><a href="#"><FaFacebook className="fb" /></a></li>
                                 <li><a href="#"><FaTwitter className="tw" /></a></li>
                                 <li><a href="#"><FaGoogle className="gl" /></a></li>
