@@ -9,7 +9,7 @@ const SainumaPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    Sainuma Page
+                    Sainuma Page dscyg
                 </Row>
             </Container>
             <Footer />
