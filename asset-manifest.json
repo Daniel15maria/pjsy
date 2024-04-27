@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/pjsy/static/css/main.adb91624.css",
-    "main.js": "/pjsy/static/js/main.bf9b6a50.js",
-    "static/media/progimg.png": "/pjsy/static/media/progimg.56f1287062932f6271ac.png",
+    "main.css": "/pjsy/static/css/main.06e208d7.css",
+    "main.js": "/pjsy/static/js/main.fb86fca8.js",
     "static/media/herosimg.png": "/pjsy/static/media/herosimg.cdf44c45f2b6e1774a26.png",
+    "static/media/progimg.png": "/pjsy/static/media/progimg.6cdb4d1391dac99168ec.png",
     "static/media/galleryimg.png": "/pjsy/static/media/galleryimg.7d6bd501f0540d3d63fa.png",
     "static/media/car3.jpg": "/pjsy/static/media/car3.72f3b2598e300bd5d94b.jpg",
     "static/media/donateimg.png": "/pjsy/static/media/donateimg.39d970373782286a4d29.png",
     "static/media/aboutimg.png": "/pjsy/static/media/aboutimg.dd8944c0b40fc743161e.png",
+    "static/media/magis3.png": "/pjsy/static/media/magis3.4d62a1c6e42cbf54ce4a.png",
     "static/media/magis.png": "/pjsy/static/media/magis.539dbda5a0735833ec2e.png",
     "static/media/vismis.png": "/pjsy/static/media/vismis.ec068f9fe217c7ab2abb.png",
     "static/media/car1.png": "/pjsy/static/media/car1.9b05391866758d9e2f94.png",
+    "static/media/magis1.png": "/pjsy/static/media/magis1.8fe9e37b31db61253e7c.png",
     "static/media/about1.png": "/pjsy/static/media/about1.8109e9c2b1abbf8dc0cf.png",
+    "static/media/magis2.png": "/pjsy/static/media/magis2.a10754816beea4eb1b3b.png",
     "static/media/hero2.png": "/pjsy/static/media/hero2.fde503bc05410670a981.png",
     "static/media/vission.png": "/pjsy/static/media/vission.4d8ec8ee6871027afb7f.png",
     "static/media/mission.png": "/pjsy/static/media/mission.2d68641ef297602b0789.png",
@@ -82,11 +85,11 @@
     "static/media/29.jpg": "/pjsy/static/media/29.0a5cae2b68d8fd2d8750.jpg",
     "static/media/logo.png": "/pjsy/static/media/logo.ca458952ee198b5e436b.png",
     "index.html": "/pjsy/index.html",
-    "main.adb91624.css.map": "/pjsy/static/css/main.adb91624.css.map",
-    "main.bf9b6a50.js.map": "/pjsy/static/js/main.bf9b6a50.js.map"
+    "main.06e208d7.css.map": "/pjsy/static/css/main.06e208d7.css.map",
+    "main.fb86fca8.js.map": "/pjsy/static/js/main.fb86fca8.js.map"
   },
   "entrypoints": [
-    "static/css/main.adb91624.css",
-    "static/js/main.bf9b6a50.js"
+    "static/css/main.06e208d7.css",
+    "static/js/main.fb86fca8.js"
   ]
 }
