@@ -9,7 +9,7 @@ import { ProgamsPage } from './components/programs/ProgamsPage';
 import HerosPage from './components/heros/HerosPage';
 import GalleryPage from './components/gallery/galler_page';
 import SainumaPage from './components/heros/SainumaPage';
-import MagisPage from './components/programs/MagisPage';
+import MagisPage2023 from './components/programs/MagisPage2023';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/donate' element={<Donate />} />
         <Route path='/sainuma' element={<SainumaPage />} ></Route>
-        <Route path='/magis' element={<MagisPage />} ></Route>
+        <Route path='/magis2023' element={<MagisPage2023 />} ></Route>
       </Routes>
     </HashRouter>
   );

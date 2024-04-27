@@ -6,7 +6,7 @@ import magisCenter from '../images/Prog/magis/magis3.png';
 import { Footer } from '../resuable/footer';
 import '../../index.css';
 
-const MagisPage = () => {
+const MagisPage2023 = () => {
     return (
         <div>
             <img alt="Programs Background Image" src={magisbg} className="img-fluid w-100" />
@@ -88,4 +88,4 @@ const MagisPage = () => {
     );
 }
 
-export default MagisPage;
+export default MagisPage2023;

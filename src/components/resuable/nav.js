@@ -120,7 +120,7 @@ export const NavBar = () => {
                             <div className='navpaths nav-text'> Programs</div>
                         </Button>
                         <Button variant='transparent' onClick={() => navigate('/heros')}>
-                            <div className='navpaths nav-text'></div>  Heros
+                            <div className='navpaths nav-text'></div>  Heroes
                         </Button>
                         <Button variant='transparent' onClick={() => navigate('/gallery')}>
                             <div className='navpaths nav-text'>Gallery</div>

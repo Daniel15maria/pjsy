@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import progbg from '../images/progimg.png';
 import { Footer } from '../resuable/footer';
-import prog1 from '../images/Prog/magis.png';
+import prog1 from '../images/Prog/prog1.png';
 import { motion } from 'framer-motion';
 import prog2 from '../images/Prog/leadership.jpg';
 import prog3 from '../images/Gallery/65.jpg';
@@ -26,18 +26,34 @@ const upvariants = {
 const programData = [
     {
         img: prog1,
-        title: "MAGIS 2023",
-        text: "To sensitize students to establish 'a hope-filled future', to orient youth towards their role in Nation Building and to motivate the students to be the change and bring difference in the society wherever one is placed."
+        title: "Youth Animator Training Program",
+        text: "The Patna Jesuit Youth Commission organized “Youth Animators training Program” in Atmadarshan from 31st May to 4th June 2023",
+        progUrl: "/animator"
+
     },
     {
         img: prog2,
-        title: "Leadership Training Program",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Lor"
+        title: "Youth Ministry Commission Meeting",
+        text: "We had the youth commission meeting from 10th-12th March 2023 in Vidya Niwas, Varanasi. It was a very fruitful meeting as we have planned meticulously for the forthcoming year",
+        progUrl: '/commissionMeet'
     },
     {
         img: prog3,
-        title: "Summer Skill Dev Program",
-        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreu"
+        title: "YOUTH COMMISSION MAGIS 2022",
+        text: "Some quick example text to build on the card title and make up the bulk of the card's content. Loreum Ipsom Idor Loreum Ipsom Idor Loreu",
+        progUrl: '/magis2022'
+    },
+    {
+        img: prog1,
+        title: "WORLD YOUTH DAY - 2023",
+        text: "To sensitize students to establish 'a hope-filled future', to orient youth towards their role in Nation Building and to motivate the students to be the change and bring difference in the society wherever one is placed.",
+        progUrl: '/youthDay'
+    },
+    {
+        img: prog1,
+        title: "MAGIS 2023",
+        text: "To sensitize students to establish 'a hope-filled future', to orient youth towards their role in Nation Building and to motivate the students to be the change and bring difference in the society wherever one is placed.",
+        progUrl: "/magis2023"
     },
 ];
 
@@ -67,7 +83,7 @@ export const ProgamsPage = () => {
     )
 };
 
-const ProgramCard = ({ img, title, text, index }) => {
+const ProgramCard = ({ img, title, text, progUrl, index }) => {
     const delay = index * 0.5; // Calculate the delay based on index
     const navigate = useNavigate();
     return (
@@ -82,7 +98,7 @@ const ProgramCard = ({ img, title, text, index }) => {
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{text}</Card.Text>
-                    <Button onClick={() => navigate('/magis')}>Read More</Button>
+                    <Button onClick={() => navigate('/magis2023')}>Read More</Button>
                 </Card.Body>
             </Card>
         </motion.div>
