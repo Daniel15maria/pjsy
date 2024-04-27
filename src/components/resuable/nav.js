@@ -99,7 +99,7 @@ export const NavBar = () => {
                         height="30"
                         className="d-inline-block align-top"
                     />{'   '}
-                    PJSYM
+                    PJSYM (Patna Jesuit Youth Ministry)
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
@@ -131,7 +131,7 @@ export const NavBar = () => {
                     </Nav>
 
 
-                    <Button onClick={() => navigate('/donate')} variant="outline-primary">Donate</Button>
+                    <Button onClick={() => navigate('/donate')} variant="primary">Donate</Button>
                 </Navbar.Collapse>
             </Container>
 
@@ -154,7 +154,7 @@ export const NavBar = () => {
                         </h3>
                         <div className="d-flex align-items-start mb-3">
                             <FaUser className="me-2" />
-                            <span>Fr. JOYSON FERNANDES SJ</span>
+                            <span>Fr. Anthony Prakash SJ</span>
                         </div>
                         <div className="d-flex align-items-center mb-3">
                             <FaPhone className="me-2" />

@@ -43,7 +43,7 @@ export const ProvidenceMssg = () => {
             <div className='overlap-group'>
                 <Image className="wave-left1 d-none d-sm-block" alt="left1" src={topleft1} />
 
-                <Image className="wave-left2 d-none d-sm-block" alt="right1" src={botright1} />
+                {/* <Image className="wave-left2 d-none d-sm-block" alt="right1" src={botright1} /> */}
             </div>
             <Container className='mt-5 mb-4' >
                 <Row className=''>
@@ -56,17 +56,17 @@ export const ProvidenceMssg = () => {
                             <Row>
                                 <motion.div className='each-head d-flex justify-content-center my-4' variants={rightVarient} initial="initial" whileInView="animate">Director's Message</motion.div>
                             </Row>
-                            <motion.p variants={rightVarient} initial="initial" whileInView="animate">I, as the chairperson of this ministry, welcome you all to this new website of us.<br></br><br></br>
-                                The ministry has many young Jesuits priests as its members. We as one team are privileged to lead the efforts of motivating,
-                                empowering and engaging the vibrant youth of our mission area. We strongly believe and advocate in creating an inclusive
-                                environment for our youth where they could explore and exhibit their talents, develop their leadership skills and actively
+                            <motion.p variants={rightVarient} initial="initial" whileInView="animate">I, Fr. Anthony Prakash SJ, as the chairperson of this ministry,
+                                welcome you all to this new website of us.</motion.p>
+                            <motion.p> The ministry has many young Jesuits priests as its members. We as one team are privileged to lead the efforts of motivating,
+                                empowering and engaging the vibrant youth of our mission area. We strongly believe in creating an inclusive environment for our youth where they could explore and exhibit their talents, develop their leadership skills and actively
                                 involve in creating a just society. We try to do all these through spiritual formation, social analysis and outreach,
                                 value systems awareness, educational initiatives and training. We try to develop in them the critical thinking skill
-                                and a deep sense of responsibility towards each other and environment. <br></br><br></br>
-                                I invite you all to explore our new website to know more about our mission works among the youth of Bihar and
-                                Uttar Pradesh in India.<br></br><br></br>
-                                Thank you for showing interest in our works. Let us together create a better<br></br> world for us and the generations
-                                to come. We look forward to your <br></br> collaboration through contribution and suggestions <br></br>for the youth works.
+                                and a deep sense of responsibility towards each other and environment. </motion.p>
+                            <motion.p> I invite you all to explore our new website to know more about our mission works among the youth of Bihar and
+                                Uttar Pradesh in India.</motion.p>
+                            <motion.p> Thank you for showing interest in our works. Let us together create a better world for us and the generations
+                                to come. We look forward to your collaboration through contribution and suggestionsfor the youth ministry.
                             </motion.p>
                         </motion.div>
                     </Col>

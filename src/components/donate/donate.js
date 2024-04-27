@@ -55,7 +55,7 @@ const rightVarient = {
 };
 
 export const Donate = () => {
-    return (<div>
+    return (<div className='justify-text'>
         <img alt="mission img" src={donatebg} className="img-fluid w-100" />
         <Container>
             <Row>
@@ -126,11 +126,11 @@ export const Donate = () => {
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicAmount">
-                                <Form.Label>Enter Amount</Form.Label>
+                                <Form.Label>Country</Form.Label>
                                 <Form.Control type="text" placeholder="Enter amount" />
                             </Form.Group>
                             <Button className='my-4' variant="primary" type="submit">
-                                Proceed to Payment
+                                Submit Details
                             </Button>
                         </Form>
                     </motion.div>

@@ -9,7 +9,7 @@ import { Footer } from '../resuable/footer';
 
 export const HomePage = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <CarouselHeader />
             <ProvidenceMssg />
             <MissionVission />

@@ -5,7 +5,7 @@ import { Footer } from '../resuable/footer';
 
 const SainumaPage = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>

@@ -60,7 +60,7 @@ const programData = [
 export const ProgamsPage = () => {
     const navigate = useNavigate();
     return (
-        <div>
+        <div className='justify-text'>
             <img alt="Programs Background Image" src={progbg} className="w-100 vh-50" />
             <motion.div variants={upvariants} initial="initial" whileInView="animate"
                 className='each-head d-flex justify-content-center my-4'>Programs</motion.div>

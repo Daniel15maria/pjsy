@@ -8,7 +8,7 @@ import '../../index.css';
 
 const MagisPage2023 = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <img alt="Programs Background Image" src={magisbg} className="img-fluid w-100" />
             <section className="d-flex align-items-center justify-content-center flex-column">
                 <Container className='align-items-center justify-content-center'>

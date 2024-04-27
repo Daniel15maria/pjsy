@@ -46,7 +46,7 @@ const cardData = [
 
 const HerosPage = () => {
     return (
-        <div>
+        <div className='justify-text'>
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
