@@ -28,7 +28,7 @@ header {
 
 .each-head {
   color: #124076;
-  font-size: 56.56px;
+  font-size: 56px;
   font-family: Inknut Antiqua;
   font-weight: 700;
   word-wrap: break-word
@@ -37,7 +37,7 @@ header {
 .each-head2 {
   color: #487D49;
   font-family: "Inknut Antiqua";
-  font-size: 56.561px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -51,6 +51,85 @@ header {
   font-weight: 700;
   line-height: normal;
 }
+
+
+@media screen and (max-width: 480px) {
+  .each-head {
+    font-size: 32px !important;
+    color: #44bc46 !important;
+  }
+
+
+  .each-head2 {
+    font-size: 32px !important;
+  }
+
+  .each-subhead2 {
+    font-size: calc(20px - (481px - 100vw) / 30) !important;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 575px) {
+  .each-head {
+    font-size: 36px !important;
+    color: #46495c !important;
+  }
+
+  .each-head2 {
+    font-size: 36px !important;
+  }
+
+  .each-subhead2 {
+    font-size: calc(22px - (576px - 100vw) / 30) !important;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 640px) {
+  .each-head {
+    font-size: 40px !important;
+    color: #7d7948 !important;
+  }
+
+  .each-head2 {
+    font-size: 40px !important;
+  }
+
+  .each-subhead2 {
+    font-size: calc(24px - (641px - 100vw) / 30) !important;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .each-head {
+    font-size: 44px !important;
+    color: #7d4868 !important;
+  }
+
+  .each-head2 {
+    font-size: 44px !important;
+  }
+
+  .each-subhead2 {
+    font-size: calc(26px - (768px - 100vw) / 30) !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .each-head {
+    font-size: 48px !important;
+    color: #487b7d !important;
+  }
+
+  .each-head2 {
+    font-size: 48px !important;
+  }
+
+  .each-subhead2 {
+    font-size: calc(30px - (992px - 100vw) / 30) !important;
+  }
+}
+
+
 
 .image-container {
   position: relative;

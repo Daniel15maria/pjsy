@@ -1,0 +1,11 @@
+.home{
+    
+}
+
+
+
+
+.dir-img {
+    height: calc(400px - (1440px - 100vw) / 10);
+    width: calc(400px - (1440px - 100vw) / 10);
+}

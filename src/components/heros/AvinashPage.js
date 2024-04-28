@@ -29,8 +29,6 @@ const AvinashPage = () => {
                     {/* <Col lg={1}></Col> */}
                     <Col lg={8}>
                         <div className='lead py-4'>
-
-
                             <strong> In the heart of a forgotten village, where poverty clung to every mud-brick wall, Avinash Mahato’s life unfolded like a tattered scroll. His father, a drunken specter, had sold their ancestral land, leaving the family adrift in a sea of deprivation. His mother, a silent warrior, stitched together their survival with frayed threads of love and resilience.
                                 Avinash’s existence was etched in shadows - the forgotten child of a forsaken corner house. The Tharu community, belittled and excommunicated, whispered tales of their misfortune. Yet, within this desolation, a spark flickered - a hunger for knowledge, a thirst for learning and a desire for escape.There come the Jesuits of Patna Province - their presence like a celestial alignment. Three JESUITS of purpose, their cassocks billowing with hope. They saw Avinash’s potential, hidden beneath rags and hunger. Their plan was audacious: to nurture a boy who wasn’t their kin, who had been robbed of childhood, who clung to the fringes of relevance. The process began - a symphony of mentorship and education. Avinash, studious and ambitious, absorbed knowledge like parched earth after rain. His energy, once scattered, found rhythm - a channeling of purpose. Computers hummed under his fingertips, and Tally sheets danced to his command.</strong>
 
@@ -44,7 +42,6 @@ const AvinashPage = () => {
                         <div>
                             <strong> But the agreement weighed heavy. He would halt his own studies, dedicating a year to service. The center became his sanctuary - a place where bytes and balance sheets intertwined. Amidst the whir of machines, he discovered more than algorithms; he found himself. Transitional moments arrived. Avinash faced his father - a man who had abandoned love for liquor. Their conversations were bridges - rickety but vital. He accepted his mentally handicapped brother, bridging chasms of disassociation. Healing flowed like monsoon rain, washing away anger and hurt.
                                 Challenges loomed. Poverty gnawed at his dreams. The internal battle—the need to prove himself, to defy failure’s icy grip—threatened to consume him. </strong>
-
                         </div>
                     </Col>
                     <Col lg={3} className='d-flex align-items-center justify-content-center'>
@@ -68,8 +65,8 @@ const AvinashPage = () => {
                     </Col>
                 </Row>
             </Container>
-            <h4 className='text-center'>The Motivating Moments Of Avinash Mahato</h4>
-            <Container>
+
+            <Container><Row className='mb-3'> <h4 className='text-center each-head2'>The Motivating Moments Of Avinash Mahato</h4></Row>
                 <Row style={{ height: '680px', overflow: 'hidden' }}>
                     <Col lg={4}><img src={avinash3} alt="avinash img 5" className="img-fluid" />
                     </Col>
