@@ -60,9 +60,9 @@ const HistoryComp = () => {
             iconStyle={{ background: "#124076", color: "#fff" }}
           //    icon={<WorkIcon />}
           >
-            <h4 className="vertical-timeline-element-title">
+            <h3 className="vertical-timeline-element-title">
               Vocation Promoter: Full-time <br></br> Fr. Anthony Prakash SJ
-            </h4>
+            </h3>
             <p>
               Inherits responsibility for Youth Apostolate.
             </p>
