@@ -61,7 +61,7 @@ const SainumaPage = () => {
                     </Col>
 
                     <Col lg={8}>
-                        <div className='lead pt-2 px-2'>
+                        <div className='lead py-2 px-2'>
                             <strong><p>The plan unfolded. Sainuma taught 15 to 20 children; her voice weaving dreams into their hearts.
                                 For six to seven years, she balanced between studies and mentoring. The classroom became her sanctuary,
                                 where she sculpted futures while shaping her own. Transitional moments bloomed. Counselling sessions were her
