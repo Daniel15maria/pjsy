@@ -27,7 +27,7 @@ function App() {
         <Route path='/heros' element={<HerosPage />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/donate' element={<Donate />} />
-
+        
         <Route path='/magis2023' element={<MagisPage2023 />} ></Route>
         <Route path='/animator' element={<AnimatorPage />} ></Route>
         <Route path='/commissionMeet' element={<YouthMinistry />} ></Route>
