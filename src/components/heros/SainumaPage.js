@@ -19,38 +19,37 @@ const SainumaPage = () => {
                     <div className='each-head text-center my-3' >
                         SAINUMA’s Symphony: From Burden to Beacon
                     </div>
-                    <Col lg={3} className='p-4 d-flex align-items-center justify-content-center'>
+                    <Col lg={4} className='p-4 d-flex align-items-center justify-content-center'>
                         <img src={sainuma1} alt="sainuma img 1" className="img-fluid" />
                     </Col>
-                    <Col lg={1}></Col>
                     <Col lg={8}>
-                        <div className='lead py-4'>
+                        <div className='lead pt-4'>
                             <h2>“For those who said, I CANNOT – look at me I CAN and I DID” <br /> – Sainuma Kumari</h2>
                             <br />
-                            <strong> In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
+                            <strong> <p>In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
                                 - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note -
                                 the girl when a boy was anticipated. Her father, a man shackled by societal norms, saw her as excess baggage. The weight of her existence
-                                pressed upon her like monsoon clouds, threatening to drown her spirit.</strong>
+                                pressed upon her like monsoon clouds, threatening to drown her spirit.</p></strong>
                         </div>
                     </Col>
                 </Row>
             </Container>
             <Container className="d-flex align-items-center justify-content-center">
                 <Row>
-                    <Col lg={6} className='lead py-4 d-flex align-items-center justify-content-center'>
+                    <Col lg={6} md={12} sm={12} className='lead pt-4 d-flex align-items-center justify-content-center'>
                         <div>
-                            <strong> But destiny had other plans; there appeared Tony Penda, a Jesuit with eyes that held galaxies. His empathy
+                            <strong> <p>But destiny had other plans; there appeared Tony Penda, a Jesuit with eyes that held galaxies. His empathy
                                 wrapped around Sainuma like a protective cloak. “You can,” he whispered, and those two words became her anthem.
                                 Tony was more than a guide; he was a loving father figure who chiseled strength from her fragility. The Society of Jesus,
                                 in the form of three Jesuits, extended their hands. Their mission was to uplift souls and nurture minds. They saw Sainuma’s
                                 potential—the one strength she possessed - the ability to learn and persevere. They ignited her longing for freedom, stoking the
-                                fire to prove that she could defy gravity.</strong>
+                                fire to prove that she could defy gravity.</p></strong>
                         </div>
                     </Col>
-                    <Col lg={3} className='d-flex align-items-center justify-content-center'>
+                    <Col lg={3} md={6} sm={6} className='d-flex mb-2 align-items-center justify-content-center'>
                         <img src={sainuma2} alt="sainuma img 1" className="img-fluid" style={{ height: '300px' }} />
                     </Col>
-                    <Col lg={3} className='d-flex align-items-center justify-content-center'>
+                    <Col lg={3} md={6} sm={6} className='d-flex align-items-center justify-content-center'>
                         <img src={sainuma3} alt="sainuma img 1" className="img-fluid" style={{ height: '300px' }} />
                     </Col>
                 </Row>
@@ -62,13 +61,13 @@ const SainumaPage = () => {
                     </Col>
 
                     <Col lg={8}>
-                        <div className='lead py-5 px-2'>
-                            <strong>The plan unfolded. Sainuma taught 15 to 20 children; her voice weaving dreams into their hearts.
+                        <div className='lead pt-2 px-2'>
+                            <strong><p>The plan unfolded. Sainuma taught 15 to 20 children; her voice weaving dreams into their hearts.
                                 For six to seven years, she balanced between studies and mentoring. The classroom became her sanctuary,
                                 where she sculpted futures while shaping her own. Transitional moments bloomed. Counselling sessions were her
                                 compass that guided her through storms of self-doubt. Macro-level care enveloped her, while micro-level lessons
                                 taught her resilience. Dancing and music became her secret gardens where she blossomed. The platform beneath
-                                her feet whispered, ‘Realize your worth’.</strong>
+                                her feet whispered, ‘Realize your worth’.</p></strong>
                         </div>
                     </Col>
                 </Row>
@@ -76,25 +75,35 @@ const SainumaPage = () => {
             <Container>
                 <Row>
                     <div className='lead p-3'>
-                        <strong> In the meantime, challenges loomed; proposals arrived like moths drawn to her beauty. But Sainuma resisted. Marriage wasn’t her destiny but liberation was. She defied norms, refusing to be a pawn in society’s game. And then, there was a transformation. From a timid soul to a beacon of hope. Hopeless whispers became anthems of courage. She donned the nurse’s uniform, stitching wounds with compassion. The children she mentored multiplied - five more souls dancing to her rhythm.
-                            From forested hills to New Delhi’s bustling streets, Sainuma’s journey echoed. She was no longer a burden; she was a symphony - a testament to love, resilience, and the power of “YOU CAN.” In her eyes, galaxies sparkled - the legacy of Tony Penda and the Jesuits who believed in her. Sainuma Kumari - the girl who defied gravity, who spun hope from threads of despair. Her brand? A beacon for every forgotten note, whispering, “YOU CAN.”</strong>
+                        <strong> <p>In the meantime, challenges loomed; proposals arrived like moths drawn to her beauty. But Sainuma
+                            resisted. Marriage wasn’t her destiny but liberation was. She defied norms, refusing to be a pawn in society’s
+                            game. And then, there was a transformation. From a timid soul to a beacon of hope. Hopeless whispers became
+                            anthems of courage. She donned the nurse’s uniform, stitching wounds with compassion. The children she mentored
+                            multiplied - five more souls dancing to her rhythm.</p>
+                            <p>
+                                From forested hills to New Delhi’s bustling streets, Sainuma’s journey echoed.
+                                She was no longer a burden; she was a symphony - a testament to love, resilience,
+                                and the power of “YOU CAN.” In her eyes, galaxies sparkled - the legacy of Tony Penda
+                                and the Jesuits who believed in her. Sainuma Kumari - the girl who defied gravity, who spun hope
+                                from threads of despair. Her brand? A beacon for every forgotten note, whispering, “YOU CAN.”</p></strong>
                     </div>
-
                 </Row>
                 <Row>
-                    <Col lg={4}><img src={sainuma5} alt="sainuma img 1" className="img-fluid" />
+                    <Col lg={4} md={4} sm={4}><img src={sainuma5} alt="sainuma img 1" className="img-fluid mb-2" />
                     </Col>
-                    <Col lg={4}><img src={sainuma6} alt="sainuma img 1" className="img-fluid" />
+                    <Col lg={4} md={4} sm={4}><img src={sainuma6} alt="sainuma img 1" className="img-fluid  mb-2" />
                     </Col>
-                    <Col lg={4}><img src={sainuma7} alt="sainuma img 1" className="img-fluid" />
+                    <Col lg={4} md={4} sm={4}><img src={sainuma7} alt="sainuma img 1" className="img-fluid" />
                     </Col>
                 </Row>
-                <Row>
+                <Row className='g-3'>
                     <Col lg={1}>
                     </Col>
-                    <Col lg={10}>
-                        <div className='lead px-1 text-center mb-5 mt-2'>
-                            <h5>Sainuma says, “The path was not easy and many said I CANNOT and I say today, look at me I CAN and I DID with the little help and constant encouragement. If I can – many others can too”.
+                    <Col lg={10} >
+                        <div className='lead px-1 text-center mb-4 mt-2'>
+                            <h5>Sainuma says, “The path was not easy and many said I CANNOT and I say today,
+                                look at me I CAN and I DID with the little help and constant encouragement.
+                                If I can – many others can too”.
                             </h5> </div>
                     </Col>
                     <Col lg={1}>
