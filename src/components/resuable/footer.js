@@ -21,10 +21,11 @@ export const Footer = () => {
                 <Row className='mt-2'>
                     <Col lg={5} sm={12}>
                         <div>
-                            <p>The Patna Jesuit Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
-                                Through programs and initiatives focused on personal growth and community engagement,
-                                we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.</p>
-                            <ul className="social-links ">
+                            The Patna Jesuit Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
+                            Through programs and initiatives focused on personal growth and community engagement,
+                            we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.
+
+                            <ul className="social-links">
                                 <li><a href="#"><FaFacebook className="fb" /></a></li>
                                 <li><a href="#"><FaTwitter className="tw" /></a></li>
                                 <li><a href="#"><FaGoogle className="gl" /></a></li>
@@ -64,7 +65,7 @@ export const Footer = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <p>Copyright &copy; 2024 pjsym All Rights Reserved.</p>
+                    Copyright &copy; 2024 pjsym All Rights Reserved.
                 </Row>
             </Container>
         </footer>

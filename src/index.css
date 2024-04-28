@@ -54,6 +54,8 @@ header {
 
 
 @media screen and (max-width: 480px) {
+
+
   .each-head {
     font-size: 32px !important;
     color: #44bc46 !important;
@@ -135,6 +137,12 @@ header {
   position: relative;
 }
 
+
+p {
+  font-size: 20px !important;
+
+}
+
 .image-container::before {
   content: "";
   position: absolute;
@@ -146,9 +154,11 @@ header {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
+
+
 
 .navcont {
   background-color: rgba(255, 255, 255, 0.9);
