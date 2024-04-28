@@ -99,7 +99,7 @@ export const NavBar = () => {
                         height="30"
                         className="d-inline-block align-top"
                     />{'   '}
-                    PJSYM (Patna Jesuit Youth Ministry)
+                    PJSYM (Patna Jesuit Society Youth Ministry)
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

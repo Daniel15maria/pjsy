@@ -127,7 +127,7 @@ export const Donate = () => {
 
                             <Form.Group className="mb-3" controlId="formBasicAmount">
                                 <Form.Label>Country</Form.Label>
-                                <Form.Control type="text" placeholder="Enter amount" />
+                                <Form.Control type="text" placeholder="Enter country" />
                             </Form.Group>
                             <Button className='my-4' variant="primary" type="submit">
                                 Submit Details
