@@ -64,7 +64,7 @@ const AvinashPage = () => {
                     </Col>
                 </Row>
             </Container>
-
+            <h4 className='text-center'>The Motivating Moments Of Avinash Mahato</h4>
             <Container>
                 <Row>
                     <Col lg={4}><img src={avinash3} alt="avinash img 5" className="img-fluid" />
