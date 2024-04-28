@@ -42,7 +42,7 @@ export const MissionVission = () => {
                                 and responding to the existing realities of our land in a constructive way, igniting the fire of
                                 dynamism, creativity, and search for meaningfulness in life based on Gospel values. Our goal is to
                                 build a just, humane, and ecologically sensitive society.</p>
-                            <Button variant="primary mt-2" onClick={() => navigate('/about')}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
+                            <Button variant="primary mt-2" onClick={() => navigate('/about/#vission')}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
                         </Col>
                         <Col lg={4}><img className='img-fluid d-none d-sm-none d-md-none d-lg-block' alt="mission img" src={missimg} /></Col>
                     </Row>
@@ -50,7 +50,6 @@ export const MissionVission = () => {
                 <Container>
                     <Row className='justify-content-end'>
                         <Col lg={4}>
-
                         </Col>
                         <Col lg={8}>
                             <div className='each-head2'>Vision</div>
@@ -67,7 +66,7 @@ export const MissionVission = () => {
                                 guide them in living out Gospel values. Through our work, we aim to build a just, humane, and
                                 ecologically sensitive society.</p>
 
-                            <Button variant="primary" onClick={() => navigate('/about')}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
+                            <Button variant="primary" onClick={() => navigate('/about#vission')}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
                         </Col>
                     </Row>
                 </Container>

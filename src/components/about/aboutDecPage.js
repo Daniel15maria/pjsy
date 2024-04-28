@@ -35,29 +35,32 @@ const rightVariant = {
 
 const AboutDec = () => {
   return (
-    <section>
-      <Container className='align-items-center justify-content-center'>
+    <section className="d-flex align-items-center justify-content-center">
+      <Container>
+        <Row>
+          <motion.div
+            className='each-head d-flex my-2  justify-content-center text-center'
+            variants={rightVariant}
+            initial="initial"
+            animate="animate"
+          >
+            About Us
+          </motion.div>
+        </Row>
         <Row className='align-items-center justify-content-center'>
-          <Col md={5} className='my-4 d-none d-sm-block'>
+          <Col md={5} className=''>
             <motion.img
               src={about1}
               alt="About image"
-              className="img-fluid my-4"
-              style={{ maxHeight: '550px' }}
+              className="img-fluid mb-3"
+              style={{ maxHeight: '350px' }}
               variants={leftVariant}
               initial="initial"
               animate="animate"
             />
           </Col>
           <Col md={7} xs={12} className='h4'>
-            <motion.div
-              className='each-head d-flex my-2  justify-content-start'
-              variants={rightVariant}
-              initial="initial"
-              animate="animate"
-            >
-              About Us
-            </motion.div>
+
             <motion.p
               variants={rightVariant}
               initial="initial"
