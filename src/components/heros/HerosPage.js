@@ -71,11 +71,11 @@ const CardContainer = ({ card, delay }) => {
     return (
         <motion.div key={card.title} variants={upvariants} initial="initial" animate="animate" transition={{ duration: 0.5, delay }}>
             <Card className="mb-3">
-                <Card.Body className="d-flex flex-row">
-                    <Card.Img src={card.img} style={{ width: '150px', height: 'auto' }} className="align-self-center me-4" />
+                <Card.Body className="d-flex flex-column flex-md-row flex-sm-row">
+                    <Card.Img src={card.img} style={{ width: 'auto', height: '250px', objectFit: 'cover' }} className="align-self-center me-md-4 mb-3 mb-md-0" />
                     <div>
                         <Card.Title>{card.title}</Card.Title>
-                        <Card.Text>{card.text}</Card.Text>
+                        <Card.Text><p>{card.text}</p></Card.Text>
                         <Button variant="primary" onClick={() => navigate(card.heroUrl)}>{card.buttonText}<FaArrowRight className='ms-1 mb-1' /></Button>
                     </div>
                 </Card.Body>
@@ -83,4 +83,7 @@ const CardContainer = ({ card, delay }) => {
         </motion.div>
     );
 }
+
+
+
 export default HerosPage;
