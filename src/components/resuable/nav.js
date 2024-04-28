@@ -98,8 +98,8 @@ export const NavBar = () => {
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
-                    />{'   '}
-                    PJSYM (Patna Jesuit Society Youth Ministry)
+                    />{'  '}
+                    <span className='h5 ms-2' style={{ color: "#124076" }}>PATNA JESUIT SOCIETY YOUTH MINISTRY</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
