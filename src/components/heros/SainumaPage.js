@@ -8,6 +8,8 @@ import sainuma4 from '../images/Heros/sainuma/sainuma4.png';
 import sainuma5 from '../images/Heros/sainuma/sainuma5.png';
 import sainuma6 from '../images/Heros/sainuma/sainuma6.png';
 import sainuma7 from '../images/Heros/sainuma/sainuma7.png';
+import '../../index.css';
+
 const SainumaPage = () => {
     return (
         <div className='justify-text'>

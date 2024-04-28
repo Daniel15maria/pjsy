@@ -13,8 +13,8 @@ const YouthMinistry = () => {
             <div style={{ backgroundColor: '#F6ECDA' }}>
 
                 <Container className='d-flex justify-content-center align-items-center'>
-                    <Row className='mt-5'>
-                        <h1 className='mt-5'>~ YOUTH MINISTRY COMMISION MEETING ~</h1>
+                    <Row className='each-head2 mt-5'>
+                        <h1 className='mt-5'> YOUTH MINISTRY COMMISION MEETING </h1>
                     </Row>
                 </Container>
                 <Container className='d-flex justify-content-center align-items-center'>
@@ -24,7 +24,16 @@ const YouthMinistry = () => {
                 </Container>
                 <Container>
                     <Row className='lead pb-5 h-1'>
-                        <strong><h3> We had the youth commission meeting from 10-12 March 2023 in Vidya Niwas, Varanasi. It was a very fruitful meeting as we have planned meticulously for the forthcoming year. We evaluated our works of the past year and discussed about the coming events of the year. We have organized “Summer Skill Development Program 2023” from 23 April to 8 May 2023 at Atmadarshan, Patna. There are total of 48 inter completed youth; 32 girls and 16 boys from around 17 parishes. They are taught spoken English, writing skills, GANGA LAHAR – MAY - JUNE, 2023 12 Biology, speech drills, certificate computer course, motivation, Spirituality and so on. Fr. Joseph Sebastian, Fr. Martin and the college community have been very helpful to us in this program. Our sincere thanks to all those who helped us in this program, very specially Sr. Monica SCN, Sr. Priya SCN, Frs. Christy, Sushil, Pulikal, Jeevan, Sebastian Alphonse, Sijo, Sr.Anita CJ, Sr. Pushpa, Mr. Amarjeet, Fr. Alwyn and the team.</h3></strong>
+                        <strong><h3> We had the youth commission meeting from 10th-12th March 2023 in Vidya Niwas, Varanasi.
+                             It was a very fruitful meeting as we have planned meticulously for the forthcoming year. We evaluated 
+                             our works of the past year and discussed about the coming events of the year. We have organized “Summer 
+                             Skill Development Program 2023” from 23 April to 8 May 2023 at Atmadarshan, Patna. There are total of 48 
+                             inter completed youth; 32 girls and 16 boys from around 17 parishes. They are taught spoken English, writing
+                              skills, GANGA LAHAR – MAY - JUNE, 2023 12 Biology, speech drills, certificate computer course, motivation, 
+                              Spirituality and so on. Fr. Joseph Sebastian, Fr. Martin and the college community have been very helpful to 
+                              us in this program. Our sincere thanks to all those who helped us in this program, very specially Sr. Monica 
+                              SCN, Sr. Priya SCN, Frs. Christy, Sushil, Pulikal, Jeevan, Sebastian Alphonse, Sijo, Sr.Anita CJ, Sr. Pushpa, 
+                              Mr. Amarjeet, Fr. Alwyn and the team.</h3></strong>
                     </Row>
                 </Container>
                 <div>

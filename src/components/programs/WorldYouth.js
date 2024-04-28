@@ -13,7 +13,7 @@ const YouthMinistry = () => {
 
                 <Container className='d-flex justify-content-center align-items-center'>
                     <Row className='mt-5'>
-                        <h1 className='mt-5'>~ WORLD YOUTH DAY - 2023 ~</h1>
+                        <h1 className='mt-5 each-head2'> WORLD YOUTH DAY - 2023 </h1>
                     </Row>
                 </Container>
                 <Container className='d-flex justify-content-center align-items-center'>

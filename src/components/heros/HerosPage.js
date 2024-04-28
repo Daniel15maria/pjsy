@@ -29,18 +29,21 @@ const cardData = [
         title: "SAINUMA KUMARI",
         text: "In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note - the girl when a boy was anticipated. Her father, a man shackled by societal norms, saw her as excess baggage. The weight of her existence pressed upon her like monsoon clouds, threatening to drown her spirit.",
         buttonText: "Read More ",
+        heroUrl: '/sainuma'
     },
     {
         img: hero2,
         title: "AVINASH MAHATO ",
         text: "In the heart of a forgotten village, where poverty clung to every mud-brick wall, Avinash Mahato’s life unfolded like a tattered scroll. His father, a drunken specter, had sold their ancestral land, leaving the family adrift in a sea of deprivation. His mother, a silent warrior, stitched together their survival with frayed threads of love and resilience.",
         buttonText: "Read More ",
+        heroUrl: '/avinash'
     },
     {
         img: hero3,
         title: "LOVELY KUMARI",
         text: "Lovely Kumari’s life began in the shadows of adversity. Born into a broken family, she lost her mother at a tender age, leaving her unwanted and vulnerable. Her father’s rejection and her stepmother’s indifference further compounded her struggles; yet, amidst the chaos, two pillars of support emerged: her grandmother and later her uncle.",
         buttonText: "Read More ",
+        heroUrl: '/kumari'
     },
 ];
 
@@ -73,7 +76,7 @@ const CardContainer = ({ card, delay }) => {
                     <div>
                         <Card.Title>{card.title}</Card.Title>
                         <Card.Text>{card.text}</Card.Text>
-                        <Button variant="primary" onClick={() => navigate('/sainuma')}>{card.buttonText}<FaArrowRight className='ms-1 mb-1' /></Button>
+                        <Button variant="primary" onClick={() => navigate(card.heroUrl)}>{card.buttonText}<FaArrowRight className='ms-1 mb-1' /></Button>
                     </div>
                 </Card.Body>
             </Card>
