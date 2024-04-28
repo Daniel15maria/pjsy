@@ -27,10 +27,10 @@ const SainumaPage = () => {
                         <div className='lead py-4'>
                             <h2>“For those who said, I CANNOT – look at me I CAN and I DID” <br /> – Sainuma Kumari</h2>
                             <br />
-                            In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
-                            - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note -
-                            the girl when a boy was anticipated. Her father, a man shackled by societal norms, saw her as excess baggage. The weight of her existence
-                            pressed upon her like monsoon clouds, threatening to drown her spirit.
+                            <strong> In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
+                                - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note -
+                                the girl when a boy was anticipated. Her father, a man shackled by societal norms, saw her as excess baggage. The weight of her existence
+                                pressed upon her like monsoon clouds, threatening to drown her spirit.</strong>
                         </div>
                     </Col>
                 </Row>
@@ -39,12 +39,12 @@ const SainumaPage = () => {
                 <Row>
                     <Col lg={6} className='lead py-4 d-flex align-items-center justify-content-center'>
                         <div>
-                            But destiny had other plans; there appeared Tony Penda, a Jesuit with eyes that held galaxies. His empathy
-                            wrapped around Sainuma like a protective cloak. “You can,” he whispered, and those two words became her anthem.
-                            Tony was more than a guide; he was a loving father figure who chiseled strength from her fragility. The Society of Jesus,
-                            in the form of three Jesuits, extended their hands. Their mission was to uplift souls and nurture minds. They saw Sainuma’s
-                            potential—the one strength she possessed - the ability to learn and persevere. They ignited her longing for freedom, stoking the
-                            fire to prove that she could defy gravity.
+                            <strong> But destiny had other plans; there appeared Tony Penda, a Jesuit with eyes that held galaxies. His empathy
+                                wrapped around Sainuma like a protective cloak. “You can,” he whispered, and those two words became her anthem.
+                                Tony was more than a guide; he was a loving father figure who chiseled strength from her fragility. The Society of Jesus,
+                                in the form of three Jesuits, extended their hands. Their mission was to uplift souls and nurture minds. They saw Sainuma’s
+                                potential—the one strength she possessed - the ability to learn and persevere. They ignited her longing for freedom, stoking the
+                                fire to prove that she could defy gravity.</strong>
                         </div>
                     </Col>
                     <Col lg={3} className='d-flex align-items-center justify-content-center'>
@@ -63,12 +63,12 @@ const SainumaPage = () => {
 
                     <Col lg={8}>
                         <div className='lead py-5 px-2'>
-                            The plan unfolded. Sainuma taught 15 to 20 children; her voice weaving dreams into their hearts.
-                            For six to seven years, she balanced between studies and mentoring. The classroom became her sanctuary,
-                            where she sculpted futures while shaping her own. Transitional moments bloomed. Counselling sessions were her
-                            compass that guided her through storms of self-doubt. Macro-level care enveloped her, while micro-level lessons
-                            taught her resilience. Dancing and music became her secret gardens where she blossomed. The platform beneath
-                            her feet whispered, ‘Realize your worth’.
+                            <strong>The plan unfolded. Sainuma taught 15 to 20 children; her voice weaving dreams into their hearts.
+                                For six to seven years, she balanced between studies and mentoring. The classroom became her sanctuary,
+                                where she sculpted futures while shaping her own. Transitional moments bloomed. Counselling sessions were her
+                                compass that guided her through storms of self-doubt. Macro-level care enveloped her, while micro-level lessons
+                                taught her resilience. Dancing and music became her secret gardens where she blossomed. The platform beneath
+                                her feet whispered, ‘Realize your worth’.</strong>
                         </div>
                     </Col>
                 </Row>
@@ -76,8 +76,8 @@ const SainumaPage = () => {
             <Container>
                 <Row>
                     <div className='lead p-3'>
-                        In the meantime, challenges loomed; proposals arrived like moths drawn to her beauty. But Sainuma resisted. Marriage wasn’t her destiny but liberation was. She defied norms, refusing to be a pawn in society’s game. And then, there was a transformation. From a timid soul to a beacon of hope. Hopeless whispers became anthems of courage. She donned the nurse’s uniform, stitching wounds with compassion. The children she mentored multiplied - five more souls dancing to her rhythm.
-                        From forested hills to New Delhi’s bustling streets, Sainuma’s journey echoed. She was no longer a burden; she was a symphony - a testament to love, resilience, and the power of “YOU CAN.” In her eyes, galaxies sparkled - the legacy of Tony Penda and the Jesuits who believed in her. Sainuma Kumari - the girl who defied gravity, who spun hope from threads of despair. Her brand? A beacon for every forgotten note, whispering, “YOU CAN.”
+                        <strong> In the meantime, challenges loomed; proposals arrived like moths drawn to her beauty. But Sainuma resisted. Marriage wasn’t her destiny but liberation was. She defied norms, refusing to be a pawn in society’s game. And then, there was a transformation. From a timid soul to a beacon of hope. Hopeless whispers became anthems of courage. She donned the nurse’s uniform, stitching wounds with compassion. The children she mentored multiplied - five more souls dancing to her rhythm.
+                            From forested hills to New Delhi’s bustling streets, Sainuma’s journey echoed. She was no longer a burden; she was a symphony - a testament to love, resilience, and the power of “YOU CAN.” In her eyes, galaxies sparkled - the legacy of Tony Penda and the Jesuits who believed in her. Sainuma Kumari - the girl who defied gravity, who spun hope from threads of despair. Her brand? A beacon for every forgotten note, whispering, “YOU CAN.”</strong>
                     </div>
 
                 </Row>

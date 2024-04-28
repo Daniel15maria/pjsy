@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import about1 from '../images/AbtDesc.png';
+import about1 from '../images/aboutdec.jpg';
 import { motion } from 'framer-motion';
 
 const leftVariant = {
@@ -42,7 +42,7 @@ const AboutDec = () => {
             <motion.img
               src={about1}
               alt="About image"
-              className="img-fluid my-5"
+              className="img-fluid my-4"
               style={{ maxHeight: '550px' }}
               variants={leftVariant}
               initial="initial"
