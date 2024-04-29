@@ -117,7 +117,7 @@ export const NavBar = () => {
                             <div className='navpaths nav-text'>Home</div>
                         </button>
                         <button className="btn btn-transparent" ariant='transparent' onClick={() => { navigate('/about'); setExpanded(false); }}>
-                            <div className='navpaths nav-text'>About us</div>
+                            <div className='navpaths nav-text'>About Us</div>
                         </button>
                         <button className="btn btn-transparent" ariant='transparent' onClick={() => { navigate('/programs'); setExpanded(false); }}>
                             <div className='navpaths nav-text'> Programs</div>
@@ -136,10 +136,6 @@ export const NavBar = () => {
                         </div>
 
                     </Nav>
-
-
-
-
                 </Navbar.Collapse>
             </Container>
 
