@@ -16,17 +16,15 @@ const SainumaPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <div className='each-head text-center my-3' >
+                    <div className='each-subhead text-center my-3' >
                         SAINUMA’s Symphony: From Burden to Beacon
                     </div>
-                    <h2>“For those who said, I CANNOT – look at me I CAN and I DID” <br /> – Sainuma Kumari</h2>
+                    <div className='quotes-head text-center px-4'>“For those who said, I CANNOT – look at me I CAN and I DID” <br /> – Sainuma Kumari</div>
                     <Col lg={4} className='p-4 d-flex align-items-center justify-content-center'>
-                        <Image fluid rounded src={sainuma1} alt="sainuma img 1" />
+                        <Image fluid rounded src={sainuma1} alt="sainuma img 1" style={{ maxHeight: '200px' }} />
                     </Col>
                     <Col lg={8}>
-                        <div className='lead pt-4'>
-
-                            <br />
+                        <div className='lead pt-4 mt-lg-2'>
                             <strong><p>In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
                                 - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note -
                                 the girl when a boy was anticipated. Her father, a man shackled by societal norms, saw her as excess baggage. The weight of her existence
@@ -40,7 +38,7 @@ const SainumaPage = () => {
                     <Col lg={6} md={12} sm={12} className='lead pt-4 d-flex align-items-center justify-content-center'>
                         <div>
                             <strong> <p>But destiny had other plans; there appeared Tony Penda, a Jesuit with eyes that held galaxies. His empathy
-                                wrapped around Sainuma like a protective cloak. “You can,” he whispered, and those two words became her anthem.
+                                wrapped around Sainuma like a protective cloak.<strong><span style={{ color: "#124076" }}>“You can”</span></strong>he whispered, and those two words became her anthem.
                                 Tony was more than a guide; he was a loving father figure who chiseled strength from her fragility. The Society of Jesus,
                                 in the form of three Jesuits, extended their hands. Their mission was to uplift souls and nurture minds. They saw Sainuma’s
                                 potential—the one strength she possessed - the ability to learn and persevere. They ignited her longing for freedom, stoking the
@@ -84,9 +82,9 @@ const SainumaPage = () => {
                             <p>
                                 From forested hills to New Delhi’s bustling streets, Sainuma’s journey echoed.
                                 She was no longer a burden; she was a symphony - a testament to love, resilience,
-                                and the power of “YOU CAN.” In her eyes, galaxies sparkled - the legacy of Tony Penda
+                                and the power of <strong><span style={{ color: "#124076" }}>“You can”</span></strong> In her eyes, galaxies sparkled - the legacy of Tony Penda
                                 and the Jesuits who believed in her. Sainuma Kumari - the girl who defied gravity, who spun hope
-                                from threads of despair. Her brand? A beacon for every forgotten note, whispering, “YOU CAN.”</p></strong>
+                                from threads of despair. Her brand? A beacon for every forgotten note, whispering, <strong><span style={{ color: "#124076" }}>“You can”</span></strong>.</p></strong>
                     </div>
                 </Row>
                 <Row className="justify-content-center">
@@ -105,7 +103,7 @@ const SainumaPage = () => {
                     {/* <Col lg={1}>
                     </Col> */}
                     <Col lg={12} >
-                        <div className='lead px-1 text-center mb-4 mt-2'>
+                        <div className='lead px-1 text-center mb-4 mt-2 quotes-head'>
                             <h5>Sainuma says, “The path was not easy and many said I CANNOT and I say today,
                                 look at me I CAN and I DID with the little help and constant encouragement.
                                 If I can – many others can too”.

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
   margin: 0;
@@ -79,6 +80,15 @@ header {
   word-wrap: break-word
 }
 
+.each-subhead {
+  color: #124076;
+  font-family: "Inknut Antiqua";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .each-head2 {
   color: #487D49;
   font-family: "Inknut Antiqua";
@@ -101,81 +111,115 @@ header {
   p {
     font-size: 20px !important;
   }
+
+
+}
+
+.quotes-head {
+  color: #487D49;
+  font-family: "Inknut Antiqua";
+  font-size: 25px !important;
+  font-weight: 600 !important;
+
+}
+
+.quotes-headblue {
+  color: #124076;
+  font-family: "Inknut Antiqua";
+  font-size: 25px !important;
 }
 
 
 @media screen and (max-width: 480px) {
 
-
-  .each-head {
-    font-size: 32px !important;
-  }
-
-
+  .each-head,
   .each-head2 {
     font-size: 32px !important;
   }
 
-  .each-subhead2 {
-    font-size: calc(20px - (481px - 100vw) / 30);
+  .each-subhead2,
+  .each-subhead {
+    font-size: 20px !important;
+  }
+
+  .quotes-head,
+  .quotes-headblue {
+    font-size: 18px !important;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 575px) {
-  .each-head {
-    font-size: 36px !important;
-  }
 
+  .each-head,
   .each-head2 {
     font-size: 36px !important;
   }
 
-  .each-subhead2 {
+  .each-subhead2,
+  .each-subhead {
     font-size: calc(22px - (576px - 100vw) / 30);
+  }
+
+  .quotes-head,
+  .quotes-headblue {
+    font-size: 20px !important;
   }
 }
 
 @media screen and (min-width: 575px) and (max-width: 640px) {
-  .each-head {
-    font-size: 40px !important;
-  }
 
+  .each-head,
   .each-head2 {
     font-size: 40px !important;
   }
 
-  .each-subhead2 {
+  .each-subhead2,
+  .each-subhead {
     font-size: calc(24px - (641px - 100vw) / 30);
+  }
+
+  .quotes-head,
+  .quotes-headblue {
+    font-size: 20px !important;
   }
 }
 
 @media screen and (min-width: 640px) and (max-width: 768px) {
-  .each-head {
-    font-size: 44px !important;
-  }
 
+  .each-head,
   .each-head2 {
     font-size: 44px !important;
   }
 
-  .each-subhead2 {
+  .each-subhead2,
+  .each-subhead {
     font-size: calc(26px - (768px - 100vw) / 30);
+  }
+
+  .quotes-head,
+  .quotes-headblue {
+    font-size: 24px !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .each-head {
-    font-size: 48px !important;
-  }
 
+  .each-head,
   .each-head2 {
     font-size: 48px !important;
   }
 
-  .each-subhead2 {
+  .each-subhead2,
+  .each-subhead {
     font-size: calc(30px - (992px - 100vw) / 30);
   }
+
+  .quotes-head,
+  .quotes-headblue {
+    font-size: 26px !important;
+  }
 }
+
 
 
 
@@ -249,10 +293,9 @@ section {
 
 /* CSS for responsive carousel text */
 
-/* CSS for responsive carousel text */
 
 .heading1 {
-  font-family: '';
+  font-family: "Roboto", sans-serif;
   position: absolute !important;
   color: white !important;
   width: 80% !important;

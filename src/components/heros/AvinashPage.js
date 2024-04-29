@@ -16,17 +16,17 @@ const AvinashPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <div className='each-head text-center my-3' >
+                    <div className='each-subhead text-center my-3' >
                         Rising from Ashes: The Avinash Mahato Story
                     </div>
-                    <h2 className='text-center'>“Avinash’s existence was etched in shadows” </h2>
+                    <div className='quotes-head text-center'>“Avinash’s existence was etched in shadows” </div>
                     <Col lg={4} className='p-2 d-flex align-items-center justify-content-center'>
                         <Image src={avinashtop} alt="avinash img 11" fluid rounded />
                     </Col>
                     <Col lg={8}>
                         <div className='lead pt-4'>
                             <strong><p>In the heart of a forgotten village, where poverty clung to every mud-brick wall, Avinash Mahato’s life unfolded like a tattered scroll. His father, a drunken specter, had sold their ancestral land, leaving the family adrift in a sea of deprivation. His mother, a silent warrior, stitched together their survival with frayed threads of love and resilience.
-                                Avinash’s existence was etched in shadows - the forgotten child of a forsaken corner house. The Tharu community, belittled and excommunicated, whispered tales of their misfortune. Yet, within this desolation, a spark flickered - a hunger for knowledge, a thirst for learning and a desire for escape.There come the Jesuits of Patna Province - their presence like a
+                                Avinash’s existence was etched in shadows - the forgotten child of a forsaken corner house. The Tharu community, belittled and excommunicated, whispered tales of their misfortune. Yet, within this desolation, a spark flickered - <strong><span style={{ color: "#124076" }}> a hunger for knowledge, a thirst for learning and a desire for escape</span></strong>. There come the Jesuits of Patna Province - their presence like a
                                 celestial alignment. Three JESUITS of purpose, their cassocks billowing with hope. They saw Avinash’s
                                 potential, hidden beneath rags and hunger. Their plan was audacious: to nurture a boy who wasn’t
                                 their kin, who had been robbed of childhood, who clung to the fringes of relevance. The process began
@@ -88,12 +88,12 @@ const AvinashPage = () => {
                                     than textbooks. Avinash Mahato, the phoenix rising from the ashes - carved his legacy.
                                     His footsteps, once hesitant, now imprinted the path for others. Poverty no longer
                                     defined him; it fueled his ascent. And as he balanced ledgers and dreams, he whispered,
-                                    “I am enough.”</p></strong>
+                                    <strong><span style={{ color: "#124076" }}>“I am enough”</span>.</strong></p></strong>
                         </div>
                     </Col>
                 </Row>
             </Container >
-            <h4 className='text-center mb-3'>The Motivating Moments Of Avinash Mahato</h4>
+            <div className='text-center mb-3 quotes-headblue'>~ The Motivating Moments Of Avinash Mahato ~</div>
             <Container className="d-flex align-items-center justify-content-center flex-column">
                 <Row className="d-flex align-items-center justify-content-center ">
                     <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
@@ -108,7 +108,7 @@ const AvinashPage = () => {
                 </Row>
                 <Row>
                     <Col lg={12}>
-                        <div className='lead px-1 text-center mb-4 mt-2'>
+                        <div className='quotes-head px-1 text-center mb-4 mt-2 px-lg-5'>
                             <h5>In the quiet of night, the Jesuits watched, a constellation of pride. Avinash’s
                                 transformation was their symphony, the notes of grace, resilience, and hope. For,
                                 in the heart of a forgotten village, a brand was born - one that defied poverty,
