@@ -37,25 +37,25 @@ const programData = [
     {
         img: prog2,
         title: "Youth Ministry Commission Meeting",
-        text: "We had the youth commission meeting from 10th-12th March 2023 in Vidya Niwas, Varanasi. It was a very fruitful meeting as we have planned meticulously for the forthcoming year...",
+        text: "We had the youth commission meeting from 10th-12th March 2023 in Vidya Niwas, Varanasi. It was a very fruitful meeting as we...",
         progUrl: '/commissionMeet'
     },
     {
         img: prog3,
         title: "Youth Commission MAGIS 2022",
-        text: "Great minds discuss ideas, average minds discuss events and small minds discuss people. - Eleanor Roosevelt Indeed, the wordings of Roosevelt...",
+        text: "Great minds discuss ideas, average minds discuss events and small minds discuss people. - Eleanor Roosevelt Indeed, the wordings...",
         progUrl: '/magis2022'
     },
     {
         img: prog4,
         title: "World Youth Day - 2023",
-        text: "We had MAGIS LISBON 2023 and World Youth Day in July and August 2023 in Portugal. We were 41 members from JCSA delegation (35 Youth and 6 Jesuits from different...",
+        text: "We had MAGIS LISBON 2023 and World Youth Day in July and August 2023 in Portugal. We were 41 members from JCSA delegation (35 Youth...",
         progUrl: '/youthDay'
     },
     {
         img: prog5,
         title: "MAGIS 2023",
-        text: "MAGIS 2023, was a 4 days event, which proved to be a transformative and enriching experience for all the participants all over India and Nepal. Rooted in the Ignatian tradition...",
+        text: "MAGIS 2023, was a 4 days event, which proved to be a transformative and enriching experience for all the participants all over India...",
         progUrl: "/magis2023"
     },
 ];
