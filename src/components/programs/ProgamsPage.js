@@ -43,7 +43,7 @@ const programData = [
     {
         img: prog3,
         title: "Youth Commission MAGIS 2022",
-        text: "Great minds discuss ideas, average minds discuss events and small minds discuss people. - Eleanor Roosevelt Indeed, the wordings...",
+        text: "Great minds discuss ideas, average minds discuss events and small minds discuss people. - Eleanor  Roosevelt  Indeed, the   wordings...",
         progUrl: '/magis2022'
     },
     {
@@ -63,7 +63,7 @@ const programData = [
 export const ProgamsPage = () => {
     const navigate = useNavigate();
     return (
-        <div className='justify-text'>
+        <div className='justify-content' >
             <img alt="Programs Background Image" src={progbg} className="w-100 vh-50" />
             <motion.div variants={upvariants} initial="initial" whileInView="animate"
                 className='each-head d-flex justify-content-center my-4'>Programs</motion.div>
@@ -91,15 +91,14 @@ const ProgramCard = ({ img, title, text, progUrl }) => {
     const navigate = useNavigate();
     return (
         <div className="h-100">
-            <Card className="h-100">
+            <Card className="h-100 d-flex flex-column">
                 <Card.Img variant="top" src={img} style={{ height: '200px', objectFit: 'cover' }} />
-                <Card.Body className="d-flex flex-column">
+                <Card.Body className="flex-grow-1 d-flex flex-column">
                     <div>
                         <Card.Title className='text-center'>{title}</Card.Title>
                         <Card.Text><p>{text}</p></Card.Text>
                     </div>
-                    <Button onClick={() => navigate(progUrl)}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
-
+                    <Button onClick={() => navigate(progUrl)} className="align-self-end mt-auto"><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
                 </Card.Body>
             </Card>
         </div>
