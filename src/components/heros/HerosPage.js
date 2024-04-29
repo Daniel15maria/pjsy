@@ -53,7 +53,7 @@ const HerosPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <motion.div variants={upvariants} initial="initial" animate="animate" className='each-head d-flex justify-content-center my-4'>Heros Stories</motion.div>
+                    <motion.div variants={upvariants} initial="initial" animate="animate" className='each-head d-flex justify-content-center my-4'>Heroes Stories</motion.div>
                 </Row>
                 <motion.div variants={upvariants} initial="initial" animate="animate">
                     {cardData.map((card, index) => (
