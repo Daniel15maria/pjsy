@@ -51,3 +51,34 @@ router.post("/contact", (req, res) => {
         }
     });
 });
+router.post("/donate", (req, res) => {
+    const name = req.body.name;
+    const street = req.body.address;
+    const phone = req.body.phone;
+    const email = req.body.email;
+    const city = req.body.city;
+    const state = req.body.state;
+    const country = req.body.country;
+    const mail = {
+        from: email,
+        to: "pjsympatna@gmail.com",
+        subject: "Donate Form Submission - PJSYM",
+        html: `<p>Name: ${name}</p>
+           <p>Phone: ${phone}</p>
+           <p>email: ${email}</p>
+           <p>Street: ${street}</p>
+           <p>City: ${city}</p>
+           <p>State: ${state}</p>
+           <p>Country: ${country}</p>
+           `,
+    };
+    contactEmail.sendMail(mail, (error) => {
+        if (error) {
+            console.error('Error sending email:', error);
+            res.status(500).json({ error: 'Failed to send email' });
+        } else {
+            console.log('Donate message sent successfully');
+            res.status(200).json({ success: true, message: 'Donate message sent successfully' });
+        }
+    });
+});

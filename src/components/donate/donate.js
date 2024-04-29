@@ -7,29 +7,47 @@ import { FaUser, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 export const Donate = () => {
     const [validated, setValidated] = useState(false);
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        address: '',
-        city: '',
-        state: '',
-        country: ''
-    });
+    const [name, setName] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState('');
+    const [city, setCity] = useState('');
+    const [state, setState] = useState('');
+    const [country, setCountry] = useState('');
 
-    const handleInputChange = (event) => {
-        const { name, value } = event.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const form = event.currentTarget;
         if (form.checkValidity()) {
-            // Construct query parameters from form data
-            const queryParams = new URLSearchParams(formData).toString();
-            // Redirect to the donation page with query parameters
-            window.location.href = `http://localhost:5000/donate?${queryParams}`;
+            try {
+                console.log('Form data:', { name, phoneNumber, email, address, city, state, country });
+                const response = await fetch("http://localhost:5000/donate", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        'name': name,
+                        'phoneNumber': phoneNumber,
+                        'email': email,
+                        'address': address,
+                        'city': city,
+                        'state': state,
+                        'country': country
+                    }),
+                });
+
+                if (response.ok) {
+                    console.log('Form submitted successfully');
+                    setValidated(false);
+                    form.reset();
+                    // Reset the form fields
+                } else {
+                    console.error('Failed to submit form:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error.message);
+            }
         } else {
             setValidated(true);
         }
@@ -82,12 +100,11 @@ export const Donate = () => {
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="name"
                                     placeholder="Enter your name"
-                                    value={formData.name}
-                                    onChange={handleInputChange}
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                     required
-                                    isInvalid={validated && !formData.name}
+                                    isInvalid={validated && !name}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter your name.</Form.Control.Feedback>
                             </Form.Group>
@@ -95,13 +112,12 @@ export const Donate = () => {
                                 <Form.Label>Email Address</Form.Label>
                                 <Form.Control
                                     type="email"
-                                    name="email"
                                     placeholder="Enter your email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                                     required
-                                    isInvalid={validated && !formData.email}
+                                    isInvalid={validated && !email}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter a valid email address.</Form.Control.Feedback>
                             </Form.Group>
@@ -109,13 +125,12 @@ export const Donate = () => {
                                 <Form.Label>Phone Number</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="phone"
                                     placeholder="Enter phone number"
-                                    value={formData.phone}
-                                    onChange={handleInputChange}
+                                    value={phoneNumber}
+                                    onChange={(e) => setPhoneNumber(e.target.value)}
                                     pattern="[0-9]{10}"
                                     required
-                                    isInvalid={validated && !formData.phone}
+                                    isInvalid={validated && !phoneNumber}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter a valid 10-digit phone number.</Form.Control.Feedback>
                             </Form.Group>
@@ -123,12 +138,11 @@ export const Donate = () => {
                                 <Form.Label>Street Address</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="address"
                                     placeholder="Enter street address"
-                                    value={formData.address}
-                                    onChange={handleInputChange}
+                                    value={address}
+                                    onChange={(e) => setAddress(e.target.value)}
                                     required
-                                    isInvalid={validated && !formData.address}
+                                    isInvalid={validated && !address}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter your street address.</Form.Control.Feedback>
                             </Form.Group>
@@ -136,12 +150,11 @@ export const Donate = () => {
                                 <Form.Label>City</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="city"
                                     placeholder="Enter city"
-                                    value={formData.city}
-                                    onChange={handleInputChange}
+                                    value={city}
+                                    onChange={(e) => setCity(e.target.value)}
                                     required
-                                    isInvalid={validated && !formData.city}
+                                    isInvalid={validated && !city}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter your city.</Form.Control.Feedback>
                             </Form.Group>
@@ -149,12 +162,11 @@ export const Donate = () => {
                                 <Form.Label>State</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="state"
                                     placeholder="Enter state"
-                                    value={formData.state}
-                                    onChange={handleInputChange}
+                                    value={state}
+                                    onChange={(e) => setState(e.target.value)}
                                     required
-                                    isInvalid={validated && !formData.state}
+                                    isInvalid={validated && !state}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter your state.</Form.Control.Feedback>
                             </Form.Group>
@@ -162,12 +174,11 @@ export const Donate = () => {
                                 <Form.Label>Country</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="country"
                                     placeholder="Enter country"
-                                    value={formData.country}
-                                    onChange={handleInputChange}
+                                    value={country}
+                                    onChange={(e) => setCountry(e.target.value)}
                                     required
-                                    isInvalid={validated && !formData.country}
+                                    isInvalid={validated && !country}
                                 />
                                 <Form.Control.Feedback type="invalid">Please enter your country.</Form.Control.Feedback>
                             </Form.Group>
@@ -175,7 +186,6 @@ export const Donate = () => {
                                 Submit Details
                             </Button>
                         </Form>
-
                     </Col>
                 </Row>
             </Container>
