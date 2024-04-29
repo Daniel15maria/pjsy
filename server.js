@@ -35,7 +35,7 @@ router.post("/contact", (req, res) => {
     const email = req.body.email;
     const mail = {
         from: email,
-        to: "pjsympatna@gmail.com",
+        to: "pjsym1975@gmail.com",
         subject: "Contact Form Submission - Pjsym",
         html: `<p>Name: ${name}</p>
            <p>Phone: ${phone}</p>
@@ -61,7 +61,7 @@ router.post("/donate", (req, res) => {
     const country = req.body.country;
     const mail = {
         from: email,
-        to: "pjsympatna@gmail.com",
+        to: "pjsym1975@gmail.com",
         subject: "Donate Form Submission - PJSYM",
         html: `<p>Name: ${name}</p>
            <p>Phone: ${phone}</p>
