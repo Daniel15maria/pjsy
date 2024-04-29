@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pjsy/static/css/main.ce625d4f.css",
-    "main.js": "/pjsy/static/js/main.812c459a.js",
+    "main.css": "/pjsy/static/css/main.86add254.css",
+    "main.js": "/pjsy/static/js/main.b4dee657.js",
     "static/media/herosimg.png": "/pjsy/static/media/herosimg.cdf44c45f2b6e1774a26.png",
     "static/media/progimg.png": "/pjsy/static/media/progimg.6cdb4d1391dac99168ec.png",
     "static/media/galleryimg.png": "/pjsy/static/media/galleryimg.7d6bd501f0540d3d63fa.png",
@@ -34,13 +34,13 @@
     "static/media/car2.jpg": "/pjsy/static/media/car2.59e19a9d0d3f49b3a146.jpg",
     "static/media/54.jpg": "/pjsy/static/media/54.560eb0a5d3712013faf5.jpg",
     "static/media/61.jpg": "/pjsy/static/media/61.560eb0a5d3712013faf5.jpg",
-    "static/media/sainuma1.png": "/pjsy/static/media/sainuma1.7c7d8cc4a342e60eba4c.png",
     "static/media/sainuma3.png": "/pjsy/static/media/sainuma3.cbb6446c16856dbd7938.png",
     "static/media/56.jpg": "/pjsy/static/media/56.9d627436955c083c8daa.jpg",
     "static/media/53.jpg": "/pjsy/static/media/53.6ffa10d35f55f5f4eeed.jpg",
     "static/media/64.jpg": "/pjsy/static/media/64.6ffa10d35f55f5f4eeed.jpg",
     "static/media/sainuma2.png": "/pjsy/static/media/sainuma2.25fd0605257ac1bed4fd.png",
     "static/media/48.jpg": "/pjsy/static/media/48.ec4730d6812ad0bb74fe.jpg",
+    "static/media/sainuma1.png": "/pjsy/static/media/sainuma1.a7c42bf5dd9c033c402a.png",
     "static/media/6.jpg": "/pjsy/static/media/6.22e4ffbeb543c28a3a61.jpg",
     "static/media/25.jpg": "/pjsy/static/media/25.2657dd0c2e27196c6431.jpg",
     "static/media/director.png": "/pjsy/static/media/director.3234a7d4dfa61d2e067b.png",
@@ -108,11 +108,11 @@
     "static/media/kumari2.jpg": "/pjsy/static/media/kumari2.632885e4c69bb37e238f.jpg",
     "static/media/logo.png": "/pjsy/static/media/logo.ca458952ee198b5e436b.png",
     "index.html": "/pjsy/index.html",
-    "main.ce625d4f.css.map": "/pjsy/static/css/main.ce625d4f.css.map",
-    "main.812c459a.js.map": "/pjsy/static/js/main.812c459a.js.map"
+    "main.86add254.css.map": "/pjsy/static/css/main.86add254.css.map",
+    "main.b4dee657.js.map": "/pjsy/static/js/main.b4dee657.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce625d4f.css",
-    "static/js/main.812c459a.js"
+    "static/css/main.86add254.css",
+    "static/js/main.b4dee657.js"
   ]
 }
