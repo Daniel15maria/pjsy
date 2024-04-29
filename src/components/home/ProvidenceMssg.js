@@ -3,6 +3,53 @@ import '../../index.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import topleft1 from '../images/topleft1.png';
 import director from '../images/director.png';
+import { motion } from 'framer-motion';
+
+const leftVarient = {
+    initial: {
+        x: -500,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1
+        }
+    }
+}
+
+const rightVarient = {
+    initial: {
+        x: 500,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.2
+        }
+    }
+
+};
+
+const upvariants = {
+    initial: {
+        y: 50,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+            staggerChildren: 0.1,
+        }
+    }
+};
 
 export const ProvidenceMssg = () => {
     return (
@@ -11,23 +58,23 @@ export const ProvidenceMssg = () => {
                 <Image className="wave-left1 d-none d-sm-none d-md-none d-lg-block" alt="left1" src={topleft1} />
             </div>
             <section className='d-flex align-items-center justify-content-center'>
-
                 <Container>
                     <Row className='mb-3'>
-                        <Col lg={4} md={0} sm={0}>
-
+                        <Col lg={4} md={0} sm={0} xs={0}>
                         </Col>
-                        <Col lg={8} md={12} sm={12}>
-                            <div className='each-head text-center'>Director's Message</div>
+                        <Col lg={8} md={12} sm={12} xs={12}>
+                            <motion.div className='each-head text-center' variants={leftVarient} initial="initial" whileInView="animate">
+                                Director's Message</motion.div>
                         </Col>
-
                     </Row>
                     <Row>
                         <Col lg={4} md={12} sm={12} className='d-flex align-items-center justify-content-center'>
+
                             <Image fluid className='dir-img mb-3' src={director} alt="directors mssg" />
+
                         </Col>
                         <Col lg={8} md={12} sm={12} className='h5 d-flex align-items-center'>
-                            <div>
+                            <motion.div variants={rightVarient} initial="initial" whileInView="animate">
                                 <p>
                                     I, Fr. Anthony Prakash SJ, as the chairperson of this ministry,
                                     welcome you all to this new website of us.
@@ -47,7 +94,7 @@ export const ProvidenceMssg = () => {
                                     Thank you for showing interest in our works. Let us together create a better world for us and the generations
                                     to come. We look forward to your collaboration through contribution and suggestions for the youth ministry.
                                 </p>
-                            </div>
+                            </motion.div>
                         </Col>
                     </Row>
                 </Container>

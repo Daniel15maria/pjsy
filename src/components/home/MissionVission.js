@@ -30,7 +30,7 @@ export const MissionVission = () => {
                 <Container>
                     <Row className='justify-content-start'>
 
-                        <div className='each-head2'>Mission</div>
+                        <motion.div className='each-head2'>Mission</motion.div>
 
                     </Row>
                     <Row className=''>

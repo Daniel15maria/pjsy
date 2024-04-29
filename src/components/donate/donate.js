@@ -4,6 +4,42 @@ import donatebg from '../images/donateimg.png';
 import '../../index.css';
 import { Footer } from '../resuable/footer';
 import { FaUser, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
+
+
+
+const leftVarient = {
+    initial: {
+        x: -500,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.5
+        }
+    }
+}
+
+const rightVarient = {
+    initial: {
+        x: 500,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.2
+        }
+    }
+
+};
+
 
 export const Donate = () => {
     const [validated, setValidated] = useState(false);
@@ -72,14 +108,16 @@ export const Donate = () => {
             <img alt="mission img" src={donatebg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <div className='each-head my-4'>Donate Now</div>
+                    <motion.div variants={leftVarient} initial="initial" whileInView="animate" className='each-head my-4'>Donate Now</motion.div>
                 </Row>
                 <Row>
                     <Col md={6} lg={6}>
-                        <div className='green-box h5 p-5'>
-                            <p>Patna Jesuits continue the mission of Jesus through the service of faith and promotion of
+                        <motion.div className='green-box h5 p-5' variants={leftVarient} initial="initial" whileInView="animate" >
+                            <p>
+                                Patna Jesuits continue the mission of Jesus through the service of faith and promotion of
                                 justice in the state of Bihar, one of the most backward states in India in terms of economy,
-                                education and health care...</p>
+                                education and health care...
+                            </p>
                             <br />
                             <p>We are involved in building human communities based on values
                                 of freedom, fellowship and justice.</p>
@@ -106,100 +144,102 @@ export const Donate = () => {
                                     Patna – 800 001
                                 </span>
                             </div>
-                        </div>
+                        </motion.div>
                     </Col>
                     <Col md={6} lg={6}>
-                        <Form className='h5 blue-text' noValidate validated={validated} onSubmit={handleSubmit}>
-                            <Form.Group className="mb-3" controlId="formBasicname">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter your name"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    required
-                                    isInvalid={validated && !name}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter your name.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email Address</Form.Label>
-                                <Form.Control
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                    required
-                                    isInvalid={validated && !email}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter a valid email address.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPhone">
-                                <Form.Label>Phone Number</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter phone number"
-                                    value={phoneNumber}
-                                    onChange={(e) => setPhoneNumber(e.target.value)}
-                                    pattern="[0-9]{10}"
-                                    required
-                                    isInvalid={validated && !phoneNumber}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter a valid 10-digit phone number.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicAddress">
-                                <Form.Label>Street Address</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter street address"
-                                    value={address}
-                                    onChange={(e) => setAddress(e.target.value)}
-                                    required
-                                    isInvalid={validated && !address}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter your street address.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicCity">
-                                <Form.Label>City</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter city"
-                                    value={city}
-                                    onChange={(e) => setCity(e.target.value)}
-                                    required
-                                    isInvalid={validated && !city}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter your city.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicState">
-                                <Form.Label>State</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter state"
-                                    value={state}
-                                    onChange={(e) => setState(e.target.value)}
-                                    required
-                                    isInvalid={validated && !state}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter your state.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicAmount">
-                                <Form.Label>Country</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter country"
-                                    value={country}
-                                    onChange={(e) => setCountry(e.target.value)}
-                                    required
-                                    isInvalid={validated && !country}
-                                />
-                                <Form.Control.Feedback type="invalid">Please enter your country.</Form.Control.Feedback>
-                            </Form.Group>
-                            <Button className='my-4' variant="primary" type="submit">
-                                {loading ? <Spinner animation="border" variant="light" size="sm" /> : 'Submit Details'}
-                            </Button>
-                        </Form>
+                        <motion.div variants={rightVarient} initial="initial" whileInView="animate">
+                            <Form className='h5 blue-text' noValidate validated={validated} onSubmit={handleSubmit}>
+                                <Form.Group className="mb-3" controlId="formBasicname">
+                                    <Form.Label>Name</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter your name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        required
+                                        isInvalid={validated && !name}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter your name.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Label>Email Address</Form.Label>
+                                    <Form.Control
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                        required
+                                        isInvalid={validated && !email}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter a valid email address.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicPhone">
+                                    <Form.Label>Phone Number</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter phone number"
+                                        value={phoneNumber}
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                        pattern="[0-9]{10}"
+                                        required
+                                        isInvalid={validated && !phoneNumber}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter a valid 10-digit phone number.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicAddress">
+                                    <Form.Label>Street Address</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter street address"
+                                        value={address}
+                                        onChange={(e) => setAddress(e.target.value)}
+                                        required
+                                        isInvalid={validated && !address}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter your street address.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicCity">
+                                    <Form.Label>City</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter city"
+                                        value={city}
+                                        onChange={(e) => setCity(e.target.value)}
+                                        required
+                                        isInvalid={validated && !city}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter your city.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicState">
+                                    <Form.Label>State</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter state"
+                                        value={state}
+                                        onChange={(e) => setState(e.target.value)}
+                                        required
+                                        isInvalid={validated && !state}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter your state.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicAmount">
+                                    <Form.Label>Country</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter country"
+                                        value={country}
+                                        onChange={(e) => setCountry(e.target.value)}
+                                        required
+                                        isInvalid={validated && !country}
+                                    />
+                                    <Form.Control.Feedback type="invalid">Please enter your country.</Form.Control.Feedback>
+                                </Form.Group>
+                                <Button className='my-4' variant="primary" type="submit">
+                                    {loading ? <Spinner animation="border" variant="light" size="sm" /> : 'Submit Details'}
+                                </Button>
+                            </Form>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container>
