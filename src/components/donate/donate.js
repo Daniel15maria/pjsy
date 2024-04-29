@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
 import donatebg from '../images/donateimg.png';
 import '../../index.css';
 import { Footer } from '../resuable/footer';
@@ -11,6 +11,7 @@ export const Donate = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
+    const [loading, setLoading] = useState(false);
     const [city, setCity] = useState('');
     const [state, setState] = useState('');
     const [country, setCountry] = useState('');
@@ -21,33 +22,46 @@ export const Donate = () => {
         if (form.checkValidity()) {
             try {
                 console.log('Form data:', { name, phoneNumber, email, address, city, state, country });
-                const response = await fetch("http://localhost:5000/donate", {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        'name': name,
-                        'phoneNumber': phoneNumber,
-                        'email': email,
-                        'address': address,
-                        'city': city,
-                        'state': state,
-                        'country': country
-                    }),
-                });
+                const response = await fetch("http://localhost:5000/donate",
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            'name': name,
+                            'phoneNumber': phoneNumber,
+                            'email': email,
+                            'address': address,
+                            'city': city,
+                            'state': state,
+                            'country': country
+                        }),
+                    });
 
                 if (response.ok) {
                     console.log('Form submitted successfully');
+                    setLoading(true);
                     setValidated(false);
                     form.reset();
-                    // Reset the form fields
+                    form.reset(); // Reset the form
+                    setName(''); // Clear name field
+                    setPhoneNumber(''); // Clear phoneNumber field
+                    setEmail(''); // Clear email field
+                    setAddress(''); // Clear address field
+                    setCity(''); // Clear city field
+                    setState(''); // Clear state field
+                    setCountry('');
                 } else {
                     console.error('Failed to submit form:', response.statusText);
                 }
             } catch (error) {
                 console.error('Error submitting form:', error.message);
             }
+            finally {
+                setLoading(false); // Stop loading animation
+            }
+
         } else {
             setValidated(true);
         }
@@ -183,7 +197,7 @@ export const Donate = () => {
                                 <Form.Control.Feedback type="invalid">Please enter your country.</Form.Control.Feedback>
                             </Form.Group>
                             <Button className='my-4' variant="primary" type="submit">
-                                Submit Details
+                                {loading ? <Spinner animation="border" variant="light" size="sm" /> : 'Submit Details'}
                             </Button>
                         </Form>
                     </Col>
