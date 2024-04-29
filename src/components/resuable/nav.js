@@ -85,7 +85,6 @@ export const NavBar = () => {
         else if (name === 'phoneNumber') setPhoneNumber(value);
         else if (name === 'email') setEmail(value);
         else if (name === 'message') setMessage(value);
-        // Reset form validation state when user starts typing
         setFormSubmitted(false);
     };
     return (
@@ -120,7 +119,7 @@ export const NavBar = () => {
                             <div className='navpaths nav-text'> Programs</div>
                         </Button>
                         <Button variant='transparent' onClick={() => navigate('/heros')}>
-                            <div className='navpaths nav-text'></div>  Heroes
+                            <div className='navpaths nav-text'>Heroes</div>
                         </Button>
                         <Button variant='transparent' onClick={() => navigate('/gallery')}>
                             <div className='navpaths nav-text'>Gallery</div>

@@ -1,4 +1,4 @@
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Image } from 'react-bootstrap'
 import herosbg from '../images/herosimg.png';
 import { Footer } from '../resuable/footer';
 import sainuma1 from '../images/Heros/sainuma/sainuma1.png';
@@ -19,12 +19,13 @@ const SainumaPage = () => {
                     <div className='each-head text-center my-3' >
                         SAINUMA’s Symphony: From Burden to Beacon
                     </div>
+                    <h2>“For those who said, I CANNOT – look at me I CAN and I DID” <br /> – Sainuma Kumari</h2>
                     <Col lg={4} className='p-4 d-flex align-items-center justify-content-center'>
-                        <img src={sainuma1} alt="sainuma img 1" className="img-fluid" />
+                        <Image fluid rounded src={sainuma1} alt="sainuma img 1" />
                     </Col>
                     <Col lg={8}>
                         <div className='lead pt-4'>
-                            <h2>“For those who said, I CANNOT – look at me I CAN and I DID” <br /> – Sainuma Kumari</h2>
+
                             <br />
                             <strong><p>In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
                                 - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note -
@@ -46,22 +47,22 @@ const SainumaPage = () => {
                                 fire to prove that she could defy gravity.</p></strong>
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={6} className='d-flex mb-2 align-items-center justify-content-center'>
-                        <img src={sainuma2} alt="sainuma img 1" className="img-fluid" style={{ height: '300px' }} />
+                    <Col lg={3} md={6} sm={6} xs={6} className='d-flex mb-2 align-items-center justify-content-center'>
+                        <Image fluid rounded src={sainuma2} alt="sainuma img 1" style={{ maxHeight: '280px' }} />
                     </Col>
-                    <Col lg={3} md={6} sm={6} className='d-flex align-items-center justify-content-center'>
-                        <img src={sainuma3} alt="sainuma img 1" className="img-fluid" style={{ height: '300px' }} />
+                    <Col lg={3} md={6} sm={6} xs={6} className='d-flex align-items-center justify-content-center'>
+                        <Image fluid rounded src={sainuma3} alt="sainuma img 1" style={{ maxHeight: '280px' }} />
                     </Col>
                 </Row>
             </Container>
             <Container>
                 <Row>
                     <Col lg={4} className='p-4 d-flex align-items-center justify-content-center'>
-                        <img src={sainuma4} alt="sainuma img 1" className="img-fluid" />
+                        <Image fluid rounded src={sainuma4} alt="sainuma img 1" />
                     </Col>
 
                     <Col lg={8}>
-                        <div className='lead py-2 px-2'>
+                        <div className='lead py-lg-5 px-2'>
                             <strong><p>The plan unfolded. Sainuma taught 15 to 20 children; her voice weaving dreams into their hearts.
                                 For six to seven years, she balanced between studies and mentoring. The classroom became her sanctuary,
                                 where she sculpted futures while shaping her own. Transitional moments bloomed. Counselling sessions were her
@@ -74,7 +75,7 @@ const SainumaPage = () => {
             </Container>
             <Container>
                 <Row>
-                    <div className='lead p-3'>
+                    <div className='lead px-2'>
                         <strong> <p>In the meantime, challenges loomed; proposals arrived like moths drawn to her beauty. But Sainuma
                             resisted. Marriage wasn’t her destiny but liberation was. She defied norms, refusing to be a pawn in society’s
                             game. And then, there was a transformation. From a timid soul to a beacon of hope. Hopeless whispers became
@@ -88,26 +89,30 @@ const SainumaPage = () => {
                                 from threads of despair. Her brand? A beacon for every forgotten note, whispering, “YOU CAN.”</p></strong>
                     </div>
                 </Row>
-                <Row>
-                    <Col lg={4} md={4} sm={4}><img src={sainuma5} alt="sainuma img 1" className="img-fluid mb-2" />
+                <Row className="justify-content-center">
+                    <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
+                        <img src={sainuma5} alt="sainuma img 1" className="img-fluid mb-2" />
                     </Col>
-                    <Col lg={4} md={4} sm={4}><img src={sainuma6} alt="sainuma img 1" className="img-fluid  mb-2" />
+                    <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
+                        <img src={sainuma6} alt="sainuma img 1" className="img-fluid  mb-2" />
                     </Col>
-                    <Col lg={4} md={4} sm={4}><img src={sainuma7} alt="sainuma img 1" className="img-fluid" />
+                    <Col lg={4} md={4} sm={4} xs={8} className="d-flex justify-content-center">
+                        <img src={sainuma7} alt="sainuma img 1" className="img-fluid" />
                     </Col>
                 </Row>
+
                 <Row className='g-3'>
-                    <Col lg={1}>
-                    </Col>
-                    <Col lg={10} >
+                    {/* <Col lg={1}>
+                    </Col> */}
+                    <Col lg={12} >
                         <div className='lead px-1 text-center mb-4 mt-2'>
                             <h5>Sainuma says, “The path was not easy and many said I CANNOT and I say today,
                                 look at me I CAN and I DID with the little help and constant encouragement.
                                 If I can – many others can too”.
-                            </h5> </div>
+                            </h5></div>
                     </Col>
-                    <Col lg={1}>
-                    </Col>
+                    {/* <Col lg={1}>
+                    </Col> */}
 
                 </Row>
             </Container>

@@ -39,38 +39,42 @@ const AvinashPage = () => {
                 </Row>
             </Container>
             <Container className="d-flex align-items-center justify-content-center">
-                <Row>
-                    <Col lg={6} md={12} sm={12} className='lead pt-3 d-flex align-items-center justify-content-center'>
-                        <div>
-                            <strong>
-                                <p>But the agreement weighed heavy. He would halt his own studies, dedicating a year
-                                    to service. The center became his sanctuary - a place where bytes and balance sheets intertwined.
-                                    Amidst the whir of machines, he discovered more than algorithms; he found himself. Transitional
-                                    moments arrived. Avinash faced his father - a man who had abandoned love for liquor. Their
-                                    conversations were bridges - rickety but vital. He accepted his mentally handicapped brother,
-                                    bridging chasms of disassociation. Healing flowed like monsoon rain, washing away anger and
-                                    hurt.
-                                </p>
-                            </strong>
-
-                        </div>
-                    </Col>
-                    <Col lg={3} md={6} sm={6} className='mb-2 p-4 d-flex align-items-center justify-content-center'>
-                        <Image src={avinash7} alt="avinash img 1" className="img-fluid" rounded />
-                    </Col>
-                    <Col lg={3} md={6} sm={6} className='d-flex p-4 align-items-center justify-content-center'>
-                        <Image src={avinash2} alt="avinash img 2" className="img-fluid" rounded />
-                    </Col>
+                <Row className="justify-content-center">
+                    <Container className="d-flex align-items-center justify-content-center">
+                        <Row className='d-flex align-items-center justify-content-center '>
+                            <Col lg={6} md={12} sm={12} xs={12} className='lead pt-lg-3 d-flex align-items-center justify-content-center'>
+                                <div>
+                                    <strong>
+                                        <p>But the agreement weighed heavy. He would halt his own studies, dedicating a year
+                                            to service. The center became his sanctuary - a place where bytes and balance sheets intertwined.
+                                            Amidst the whir of machines, he discovered more than algorithms; he found himself. Transitional
+                                            moments arrived. Avinash faced his father - a man who had abandoned love for liquor. Their
+                                            conversations were bridges - rickety but vital. He accepted his mentally handicapped brother,
+                                            bridging chasms of disassociation. Healing flowed like monsoon rain, washing away anger and
+                                            hurt.
+                                        </p>
+                                    </strong>
+                                </div>
+                            </Col>
+                            <Col lg={3} md={6} sm={6} xs={6} className='mb-2 p-4 d-flex align-items-center justify-content-center'>
+                                <Image src={avinash7} alt="avinash img 1" className="img-fluid" rounded />
+                            </Col>
+                            <Col lg={3} md={6} sm={6} xs={6} className='d-flex p-4 align-items-center justify-content-center'>
+                                <Image src={avinash2} alt="avinash img 2" className="img-fluid" rounded />
+                            </Col>
+                        </Row>
+                    </Container>
                 </Row>
+
             </Container>
-            <Container>
+            <Container className='mb-2'>
                 <Row>
-                    <Col lg={4} className='p-4 d-flex align-items-center justify-content-center'>
+                    <Col lg={4} className='px-4 d-flex align-items-center justify-content-center'>
                         <Image src={avinash5} alt="avinash img 1" className="img-fluid" rounded />
                     </Col>
 
                     <Col lg={8}>
-                        <div className='lead py-2 px-2'>
+                        <div className='lead px-2  py-2'>
                             <strong>
                                 <p>
                                     Challenges loomed. Poverty gnawed at his dreams. The internal battle—the need to prove himself,
@@ -88,18 +92,18 @@ const AvinashPage = () => {
                         </div>
                     </Col>
                 </Row>
-            </Container>
+            </Container >
             <h4 className='text-center mb-3'>The Motivating Moments Of Avinash Mahato</h4>
             <Container className="d-flex align-items-center justify-content-center flex-column">
                 <Row className="d-flex align-items-center justify-content-center ">
-                    <Col lg={4} md={4} sm={4} className="d-flex justify-content-center">
-                        <img src={avinash3} alt="avinash img 5" className="img-fluid mb-2" />
+                    <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
+                        <Image src={avinash3} fluid rounded alt="avinash Image 5" className=" mb-2" />
                     </Col>
-                    <Col lg={4} md={4} sm={4} className="d-flex justify-content-center">
-                        <img src={avinash6} alt="avinash img 6" className="img-fluid mb-2" />
+                    <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
+                        <Image src={avinash6} fluid rounded alt="avinash Image 6" className=" mb-2" />
                     </Col>
-                    <Col lg={4} md={4} sm={4} className="d-flex justify-content-center">
-                        <img src={avinash1} alt="avinash img 7" className="img-fluid mb-2" />
+                    <Col lg={4} md={4} sm={4} xs={8} className="d-flex justify-content-center">
+                        <Image src={avinash1} fluid rounded alt="avinash img 7" className="img-fluid mb-2" />
                     </Col>
                 </Row>
                 <Row>

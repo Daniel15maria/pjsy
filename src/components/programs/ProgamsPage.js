@@ -29,7 +29,7 @@ const upvariants = {
 const programData = [
     {
         img: prog1,
-        title: "Youth Animator Training Program",
+        title: " Youth Animator Training Program",
         text: "The Patna Jesuit Youth Commission organized “Youth Animators training Program” in Atmadarshan from 31st May to 4th June 2023...",
         progUrl: "/animator"
 
@@ -42,13 +42,13 @@ const programData = [
     },
     {
         img: prog3,
-        title: "YOUTH COMMISSION MAGIS 2022",
+        title: "Youth Commission MAGIS 2022",
         text: "Great minds discuss ideas, average minds discuss events and small minds discuss people. - Eleanor Roosevelt Indeed, the wordings of Roosevelt...",
         progUrl: '/magis2022'
     },
     {
         img: prog4,
-        title: "WORLD YOUTH DAY - 2023",
+        title: "World Youth Day - 2023",
         text: "We had MAGIS LISBON 2023 and World Youth Day in July and August 2023 in Portugal. We were 41 members from JCSA delegation (35 Youth and 6 Jesuits from different...",
         progUrl: '/youthDay'
     },
@@ -95,7 +95,7 @@ const ProgramCard = ({ img, title, text, progUrl }) => {
                 <Card.Img variant="top" src={img} style={{ height: '200px', objectFit: 'cover' }} />
                 <Card.Body className="d-flex flex-column">
                     <div>
-                        <Card.Title>{title}</Card.Title>
+                        <Card.Title className='text-center'>{title}</Card.Title>
                         <Card.Text><p>{text}</p></Card.Text>
                     </div>
                     <Button onClick={() => navigate(progUrl)}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
