@@ -94,11 +94,12 @@ export const NavBar = () => {
                     <img
                         alt=""
                         src={logo}
-                        width="30"
-                        height="30"
+                        width="40"
+                        height="40"
                         className="d-inline-block align-top"
                     />
-                    <span className='h5 ms-3' style={{ color: "#124076" }}>PATNA JESUIT SOCIETY YOUTH MINISTRY</span>
+                    <span className='ms-3 nav-head d-none d-lg-inline'>PATNA JESUIT SOCIETY YOUTH MINISTRY</span>
+                    <span className='ms-3 nav-head d-lg-none'>PJSYM</span> {/* Display this on small screens */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
@@ -109,28 +110,29 @@ export const NavBar = () => {
                         {/* <Nav.Link href="/#heros" className='navpaths'>Heroes</Nav.Link> */}
                         {/* <Nav.Link href="/#gallery" className='navpaths'>Gallery</Nav.Link> */}
                         {/* <Nav.Link href="#!" className='navpaths' onClick={() => setLgShow(true)}>Contact Us</Nav.Link> */}
-                        <Button variant='transparent' onClick={() => navigate('/')}>
+                        <button className="btn btn-transparent" onClick={() => navigate('/')}>
                             <div className='navpaths nav-text'>Home</div>
-                        </Button>
-                        <Button variant='transparent' onClick={() => navigate('/about')}>
+                        </button>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/about')}>
                             <div className='navpaths nav-text'>About us</div>
-                        </Button>
-                        <Button variant='transparent' onClick={() => navigate('/programs')}>
+                        </button>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/programs')}>
                             <div className='navpaths nav-text'> Programs</div>
-                        </Button>
-                        <Button variant='transparent' onClick={() => navigate('/heros')}>
+                        </button>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/heros')}>
                             <div className='navpaths nav-text'>Heroes</div>
-                        </Button>
-                        <Button variant='transparent' onClick={() => navigate('/gallery')}>
+                        </button>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/gallery')}>
                             <div className='navpaths nav-text'>Gallery</div>
-                        </Button>
-                        <Button variant='transparent' onClick={() => setLgShow(true) > navigate('#!')}>
+                        </button>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => setLgShow(true) > navigate('#!')}>
                             <div className='navpaths nav-text'>Contact Us</div>
-                        </Button>
+                        </button>
+                        <button onClick={() => navigate('/donate')} className="btn btn-primary">Donate</button>
                     </Nav>
 
 
-                    <Button onClick={() => navigate('/donate')} variant="primary">Donate</Button>
+
                 </Navbar.Collapse>
             </Container>
 

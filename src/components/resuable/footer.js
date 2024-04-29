@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Button, Col, Row } from 'react-bootstrap';
-import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaPhone } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaGoogle, FaYoutube, FaInstagram, FaPhone } from 'react-icons/fa';
 import { Person, Envelope, Telephone, Location, Pin } from 'react-bootstrap-icons';
 import logo from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
@@ -26,10 +26,11 @@ export const Footer = () => {
                             we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.
 
                             <ul className="social-links">
-                                <li><a href="#"><FaFacebook className="fb" /></a></li>
-                                <li><a href="#"><FaTwitter className="tw" /></a></li>
-                                <li><a href="#"><FaGoogle className="gl" /></a></li>
-                                <li><a href="#"><FaInstagram className="ig" /></a></li>
+                                <li><a href="https://www.facebook.com/people/Patna-Jesuit-Society-Youth-Ministry/61558331201148/"><FaFacebook className="fb" /></a></li>
+                                <li><a href="https://www.instagram.com/patnajesuityouthministry/"><FaInstagram className="ig" /></a></li>
+                                <li><a href="https://www.twitter.com"><FaTwitter className="tw" /></a></li>
+                                <li><a href="https://www.youtube.com"><FaYoutube className="gl" /></a></li>
+
                             </ul>
                         </div>
                     </Col>

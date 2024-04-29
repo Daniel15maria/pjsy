@@ -164,6 +164,12 @@ section {
 }
 
 
+.nav-head {
+  color: #124076;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 1.8;
+}
 
 .navcont {
   background-color: rgba(255, 255, 255, 0.9);
@@ -178,10 +184,25 @@ section {
 }
 
 .navpaths {
-
   color: rgb(96, 96, 96) !important;
   font-size: 17px !important;
   border: none;
+  outline: none;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .navpaths {
+    font-size: 14px !important;
+  }
+
+  .nav-head {
+    font-size: 16px !important;
+  }
+}
+
+.navcont button:focus,
+.navcont button:active,
+.navcont button:hover {
   outline: none;
 }
 

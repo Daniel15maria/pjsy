@@ -71,8 +71,8 @@ const CardContainer = ({ card, delay }) => {
     return (
         <motion.div key={card.title} variants={upvariants} initial="initial" animate="animate" transition={{ duration: 0.5, delay }}>
             <Card className="mb-3">
-                <Card.Body className="d-flex flex-column flex-md-row flex-sm-row">
-                    <Card.Img src={card.img} style={{ width: 'auto', height: '250px', objectFit: 'cover' }} className="align-self-center me-md-4 mb-3 mb-md-0" />
+                <Card.Body className="d-flex flex-column flex-lg-row">
+                    <Card.Img src={card.img} style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} className="align-self-center  me-md-4 mb-3 mb-md-0" />
                     <div>
                         <Card.Title>{card.title}</Card.Title>
                         <Card.Text><p>{card.text}</p></Card.Text>
