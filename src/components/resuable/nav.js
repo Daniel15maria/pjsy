@@ -128,8 +128,12 @@ export const NavBar = () => {
                         <button className="btn btn-transparent" ariant='transparent' onClick={() => setLgShow(true) > navigate('#!')}>
                             <div className='navpaths nav-text'>Contact Us</div>
                         </button>
-                        <button onClick={() => navigate('/donate')} className="btn btn-primary">Donate</button>
+                        <div className="d-flex align-items-center justify-content-center">
+                            <button onClick={() => navigate('/donate')} className="btn btn-primary mx-2 me-lg-0">Donate</button>
+                        </div>
+
                     </Nav>
+
 
 
 
