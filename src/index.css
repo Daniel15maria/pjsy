@@ -389,9 +389,6 @@ footer {
 
 @media (max-width: 960px) {
   .modal-90w {
-    /* width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important; */
     max-width: 95vw !important;
   }
 }

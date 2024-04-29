@@ -16,6 +16,9 @@ export const NavBar = () => {
     const [showToast, setShowToast] = useState(false);
     const [toastVariant, setToastVariant] = useState('success');
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [expanded, setExpanded] = useState(false); // State to manage Navbar collapse
+
+    const handleNavbarToggle = () => setExpanded(!expanded);
 
     const handleClose = async (event) => {
         event.preventDefault();
@@ -88,7 +91,7 @@ export const NavBar = () => {
         setFormSubmitted(false);
     };
     return (
-        <Navbar className="navcont fixed-top" expand="lg">
+        <Navbar className="navcont fixed-top" expand="lg" expanded={expanded}>
             <Container>
                 <Navbar.Brand href="/">
                     <img
@@ -101,7 +104,7 @@ export const NavBar = () => {
                     <span className='ms-3 nav-head d-none d-lg-inline'>PATNA JESUIT SOCIETY YOUTH MINISTRY</span>
                     <span className='ms-3 nav-head d-lg-none'>PJSYM</span> {/* Display this on small screens */}
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
                         {/* <Nav.Link href="/" className='navpaths nav-text'>Home</Nav.Link> */}
@@ -110,26 +113,26 @@ export const NavBar = () => {
                         {/* <Nav.Link href="/#heros" className='navpaths'>Heroes</Nav.Link> */}
                         {/* <Nav.Link href="/#gallery" className='navpaths'>Gallery</Nav.Link> */}
                         {/* <Nav.Link href="#!" className='navpaths' onClick={() => setLgShow(true)}>Contact Us</Nav.Link> */}
-                        <button className="btn btn-transparent" onClick={() => navigate('/')}>
+                        <button className="btn btn-transparent" onClick={() => { navigate('/'); setExpanded(false); }}>
                             <div className='navpaths nav-text'>Home</div>
                         </button>
-                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/about')}>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => { navigate('/about'); setExpanded(false); }}>
                             <div className='navpaths nav-text'>About us</div>
                         </button>
-                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/programs')}>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => { navigate('/programs'); setExpanded(false); }}>
                             <div className='navpaths nav-text'> Programs</div>
                         </button>
-                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/heros')}>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => { navigate('/heros'); setExpanded(false); }}>
                             <div className='navpaths nav-text'>Heroes</div>
                         </button>
-                        <button className="btn btn-transparent" ariant='transparent' onClick={() => navigate('/gallery')}>
+                        <button className="btn btn-transparent" ariant='transparent' onClick={() => { navigate('/gallery'); setExpanded(false); }}>
                             <div className='navpaths nav-text'>Gallery</div>
                         </button>
                         <button className="btn btn-transparent" ariant='transparent' onClick={() => setLgShow(true) > navigate('#!')}>
                             <div className='navpaths nav-text'>Contact Us</div>
                         </button>
                         <div className="d-flex align-items-center justify-content-center">
-                            <button onClick={() => navigate('/donate')} className="btn btn-primary mx-2 me-lg-0">Donate</button>
+                            <button onClick={() => { navigate('/donate'); setExpanded(false); }} className="btn btn-primary mx-2 me-lg-0">Donate</button>
                         </div>
 
                     </Nav>
