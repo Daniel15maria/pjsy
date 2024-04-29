@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import herosbg from '../images/herosimg.png';
 import { Footer } from '../resuable/footer';
 import avinash1 from '../images/Heros/avinash/avinash1c.jpg';
@@ -17,11 +17,11 @@ const AvinashPage = () => {
             <Container>
                 <Row>
                     <div className='each-head text-center my-3' >
-                        Rising from Ashes: The AVINASH MAHATO Story
+                        Rising from Ashes: The Avinash Mahato Story
                     </div>
                     <h2 className='text-center'>“Avinash’s existence was etched in shadows” </h2>
                     <Col lg={4} className='p-2 d-flex align-items-center justify-content-center'>
-                        <img src={avinashtop} alt="avinash img 11" className="img-fluid" />
+                        <Image src={avinashtop} alt="avinash img 11" fluid rounded />
                     </Col>
                     <Col lg={8}>
                         <div className='lead pt-4'>
@@ -40,41 +40,45 @@ const AvinashPage = () => {
             </Container>
             <Container className="d-flex align-items-center justify-content-center">
                 <Row>
-                    <Col lg={6} md={12} sm={12} className='lead pt-4 d-flex align-items-center justify-content-center'>
+                    <Col lg={6} md={12} sm={12} className='lead pt-3 d-flex align-items-center justify-content-center'>
                         <div>
-                            <strong><p> But the agreement weighed heavy. He would halt his own studies, dedicating a year
-                                to service. The center became his sanctuary - a place where bytes and balance sheets intertwined.
-                                Amidst the whir of machines, he discovered more than algorithms; he found himself. Transitional
-                                moments arrived. Avinash faced his father - a man who had abandoned love for liquor. Their
-                                conversations were bridges - rickety but vital. He accepted his mentally handicapped brother,
-                                bridging chasms of disassociation. Healing flowed like monsoon rain, washing away anger and
-                                hurt.</p>
+                            <strong>
+                                <p>But the agreement weighed heavy. He would halt his own studies, dedicating a year
+                                    to service. The center became his sanctuary - a place where bytes and balance sheets intertwined.
+                                    Amidst the whir of machines, he discovered more than algorithms; he found himself. Transitional
+                                    moments arrived. Avinash faced his father - a man who had abandoned love for liquor. Their
+                                    conversations were bridges - rickety but vital. He accepted his mentally handicapped brother,
+                                    bridging chasms of disassociation. Healing flowed like monsoon rain, washing away anger and
+                                    hurt.
+                                </p>
                             </strong>
 
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={6} className='mb-2 d-flex align-items-center justify-content-center'>
-                        <img src={avinash7} alt="avinash img 1" className="img-fluid" style={{ width: '250px' }} />
+                    <Col lg={3} md={6} sm={6} className='mb-2 p-4 d-flex align-items-center justify-content-center'>
+                        <Image src={avinash7} alt="avinash img 1" className="img-fluid" rounded />
                     </Col>
-                    <Col lg={3} md={6} sm={6} className='d-flex align-items-center justify-content-center'>
-                        <img src={avinash2} alt="avinash img 2" className="img-fluid" style={{ height: '250px' }} />
+                    <Col lg={3} md={6} sm={6} className='d-flex p-4 align-items-center justify-content-center'>
+                        <Image src={avinash2} alt="avinash img 2" className="img-fluid" rounded />
                     </Col>
                 </Row>
             </Container>
             <Container>
                 <Row>
                     <Col lg={4} className='p-4 d-flex align-items-center justify-content-center'>
-                        <img src={avinash5} alt="avinash img 1" className="img-fluid" />
+                        <Image src={avinash5} alt="avinash img 1" className="img-fluid" rounded />
                     </Col>
 
                     <Col lg={8}>
                         <div className='lead py-2 px-2'>
                             <strong>
-                                <p>  Challenges loomed. Poverty gnawed at his dreams. The internal battle—the need to prove himself,
+                                <p>
+                                    Challenges loomed. Poverty gnawed at his dreams. The internal battle—the need to prove himself,
                                     to defy failure’s icy grip—threatened to consume him. Yet, he persisted. Fluency in English became
                                     his armor, confidence its sheen. Avinash was transformed—an emotional tempest now a steady ship
-                                    navigating life’s tempests.</p>
-                                <p> And so, he pursued M.Com - a beacon of resilience. The boy who once clenched
+                                    navigating life’s tempests.
+                                    <br></br>
+                                    And so, he pursued M.Com - a beacon of resilience. The boy who once clenched
                                     fists in rage now faced life’s storms with courage. His brand story? It echoed through
                                     the village - a testament to the Society of Jesus, to mentors who believed in more
                                     than textbooks. Avinash Mahato, the phoenix rising from the ashes - carved his legacy.
@@ -85,32 +89,32 @@ const AvinashPage = () => {
                     </Col>
                 </Row>
             </Container>
-            <h4 className='text-center'>The Motivating Moments Of Avinash Mahato</h4>
+            <h4 className='text-center mb-3'>The Motivating Moments Of Avinash Mahato</h4>
             <Container className="d-flex align-items-center justify-content-center flex-column">
-                <Row style={{ height: '590px', overflow: 'hidden' }} className="d-flex align-items-center justify-content-center ">
-                    <Col lg={4} md={4} sm={4}>
+                <Row className="d-flex align-items-center justify-content-center ">
+                    <Col lg={4} md={4} sm={4} className="d-flex justify-content-center">
                         <img src={avinash3} alt="avinash img 5" className="img-fluid mb-2" />
                     </Col>
-                    <Col lg={4} md={4} sm={4}><img src={avinash6} alt="avinash img 6" className="img-fluid mb-2" />
+                    <Col lg={4} md={4} sm={4} className="d-flex justify-content-center">
+                        <img src={avinash6} alt="avinash img 6" className="img-fluid mb-2" />
                     </Col>
-                    <Col lg={4} md={4} sm={4}><img src={avinash1} alt="avinash img 7" className="img-fluid mb-2" />
+                    <Col lg={4} md={4} sm={4} className="d-flex justify-content-center">
+                        <img src={avinash1} alt="avinash img 7" className="img-fluid mb-2" />
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={1}>
-                    </Col>
-                    <Col lg={10}>
+                    <Col lg={12}>
                         <div className='lead px-1 text-center mb-4 mt-2'>
                             <h5>In the quiet of night, the Jesuits watched, a constellation of pride. Avinash’s
                                 transformation was their symphony, the notes of grace, resilience, and hope. For,
                                 in the heart of a forgotten village, a brand was born - one that defied poverty,
                                 embraced vulnerability, and dared to dream.
-                            </h5> </div>
-                    </Col>
-                    <Col lg={1}>
+                            </h5>
+                        </div>
                     </Col>
                 </Row>
             </Container>
+
             <Footer />
         </div>
     )

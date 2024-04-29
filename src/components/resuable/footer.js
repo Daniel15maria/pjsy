@@ -21,7 +21,7 @@ export const Footer = () => {
                 <Row className='mt-2'>
                     <Col lg={5} sm={12}>
                         <div>
-                            The Patna Jesuit Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
+                            The Patna Jesuit Society Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
                             Through programs and initiatives focused on personal growth and community engagement,
                             we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.
 
