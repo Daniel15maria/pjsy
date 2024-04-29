@@ -25,7 +25,7 @@ const SainumaPage = () => {
                     </Col>
                     <Col lg={8}>
                         <div className='lead pt-4 mt-lg-2'>
-                            <strong><p>In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfold
+                            <strong><p>In the sun-kissed valleys of North-East of India, where ancient traditions wove the fabric of existence, Sainuma Kumari’s story unfolds
                                 - a symphony of resilience, courage and confidence. Born in a family of seven sisters and one brother, Sainuma was the unexpected note -
                                 the girl when a boy was anticipated. Her father, a man shackled by societal norms, saw her as excess baggage. The weight of her existence
                                 pressed upon her like monsoon clouds, threatening to drown her spirit.</p></strong>
