@@ -17,10 +17,10 @@ const KumariPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <div className='each-head text-center my-3' >
+                    <div className='each-subhead text-center my-3' >
                         LOVELY KUMARI’s Journey: From Fragility to Strength
                     </div>
-                    <h2>“The warmth of parental love eluded her” </h2>
+                    <div className='quotes-head'>“The warmth of parental love eluded her” </div>
                     <Col lg={4} className='p-2 d-flex align-items-center justify-content-center'>
                         <Image src={kumari1} alt="kumari img" fluid rounded />
                     </Col>
@@ -89,21 +89,21 @@ const KumariPage = () => {
                     </Col>
                 </Row>
             </Container>
-            <h4 className='text-center mb-3'>The Beautiful Times Of Lovely Kumari </h4>
+            <h4 className='text-center mb-3 quotes-headblue'>The Beautiful Times Of Lovely Kumari </h4>
             <Container className="d-flex align-items-center justify-content-center flex-column">
                 <Row className="d-flex align-items-center justify-content-center ">
                     <Col lg={6} md={6} sm={6} xs={6} className="d-flex justify-content-center">
-                        <img src={kumari7} alt="avinash img 5" className="img-fluid " />
+                        <Image fluid rounded src={kumari7} alt="avinash img 5" className="img-fluid " />
                     </Col>
                     <Col lg={6} md={6} sm={6} xs={6} className="d-flex justify-content-center">
-                        <img src={kumari6} alt="avinash img 6" className="img-fluid" />
+                        <Image fluid rounded src={kumari6} alt="avinash img 6" className="img-fluid" />
                     </Col>
                 </Row>
                 <Row>
                     <Col lg={1}>
                     </Col>
                     <Col lg={10}>
-                        <div className='lead px-1 text-center mb-5 mt-2'>
+                        <div className='quotes-head px-1 text-center mb-5 mt-2'>
                             <h5>In the quiet of night, she continues her transforming career while pursuing her
                                 degree – she works and convinced to uplift girls like her.
                             </h5>

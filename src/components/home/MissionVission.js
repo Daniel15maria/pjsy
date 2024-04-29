@@ -55,17 +55,18 @@ export const MissionVission = () => {
                             <div className='each-head2'>Vision</div>
                         </Col>
                     </Row>
-                    <Row className='d-flex justify-content-center align-items-center'  >
+                    <Row className='d-flex justify-content-center align-items-center mb-5'  >
                         <Col lg={4} className='d-flex justify-content-center align-items-center' >
                             <Image fluid src={visimg} />
                         </Col>
                         <Col lg={8} className='h5'>
-                            <p>The mission of the Patna Jesuits is to empower the youth, especially the unorganized youth,
+                            <p>
+                                The mission of the Patna Jesuits is to empower the youth, especially the unorganized youth,
                                 by accompanying them in understanding and responding to the existing realities of our land.
                                 We strive to harness their potentialities, ignite their fire for dynamism and creativity, and
                                 guide them in living out Gospel values. Through our work, we aim to build a just, humane, and
-                                ecologically sensitive society.</p>
-
+                                ecologically sensitive society.
+                            </p>
                             <Button variant="primary" onClick={() => navigate('/about#vission')}><strong>Read More</strong> <FaArrowRight className='ms-1 mb-1' /></Button>
                         </Col>
                     </Row>
