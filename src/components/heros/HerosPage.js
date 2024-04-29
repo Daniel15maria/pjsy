@@ -73,16 +73,21 @@ const CardContainer = ({ card, delay }) => {
             <Card className="mb-3">
                 <Card.Body className="d-flex flex-column flex-lg-row">
                     <Card.Img src={card.img} style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} className="align-self-center ms-lg-1 mx-md-4 mb-3 mb-md-0" />
-                    <div>
-                        <Card.Title className='mt-md-2'>{card.title}</Card.Title>
-                        <Card.Text><p>{card.text}</p></Card.Text>
-                        <Button variant="primary" onClick={() => navigate(card.heroUrl)}>{card.buttonText}<FaArrowRight className='ms-1 mb-1' /></Button>
+                    <div className="d-flex flex-column justify-content-between">
+                        <div>
+                            <Card.Title className='mt-md-2'>{card.title}</Card.Title>
+                            <Card.Text><p>{card.text}</p></Card.Text>
+                        </div>
+                        <div className="text-end mt-3 mt-lg-0">
+                            <Button variant="primary" onClick={() => navigate(card.heroUrl)}>{card.buttonText}<FaArrowRight className='ms-1 mb-1' /></Button>
+                        </div>
                     </div>
                 </Card.Body>
             </Card>
         </motion.div>
     );
 }
+
 
 
 
