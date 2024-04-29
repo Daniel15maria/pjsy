@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export const Footer = () => {
     const navigate = useNavigate();
     return (
-        <footer>
+        <footer className='px-2'>
             <Container className='py-4'>
                 <Row>
                     <Col xs="auto">
@@ -24,17 +24,14 @@ export const Footer = () => {
                             The Patna Jesuit Society Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
                             Through programs and initiatives focused on personal growth and community engagement,
                             we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.
-
                             <ul className="social-links">
                                 <li><a href="https://www.facebook.com/people/Patna-Jesuit-Society-Youth-Ministry/61558331201148/"><FaFacebook className="fb" /></a></li>
                                 <li><a href="https://www.instagram.com/patnajesuityouthministry/"><FaInstagram className="ig" /></a></li>
                                 <li><a href="https://www.twitter.com"><FaTwitter className="tw" /></a></li>
                                 <li><a href="https://www.youtube.com"><FaYoutube className="gl" /></a></li>
-
                             </ul>
                         </div>
                     </Col>
-
                     <Col lg={3} className='d-none d-sm-block'>
                         <div className='d-flex align-items-center justify-content-center'>
                             <ul className="footer-nav footer-navbutton">
@@ -51,7 +48,7 @@ export const Footer = () => {
                         </div>
 
                     </Col>
-                    <Col lg={4} sm={12}>
+                    <Col lg={4} sm={12} xs={12}>
                         <div>
                             <ul style={{ listStyleType: 'none' }}>
                                 <li><Person />Fr. Anthony Prakash SJ</li>
