@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pjsy/static/css/main.a3a4d468.css",
-    "main.js": "/pjsy/static/js/main.3c8aeba2.js",
+    "main.js": "/pjsy/static/js/main.cca791b9.js",
     "static/media/herosimg.png": "/pjsy/static/media/herosimg.cdf44c45f2b6e1774a26.png",
     "static/media/progimg.png": "/pjsy/static/media/progimg.6cdb4d1391dac99168ec.png",
     "static/media/galleryimg.png": "/pjsy/static/media/galleryimg.7d6bd501f0540d3d63fa.png",
@@ -108,13 +108,13 @@
     "static/media/avinash7.jpg": "/pjsy/static/media/avinash7.668057a2f30dd9866139.jpg",
     "static/media/kumari2.jpg": "/pjsy/static/media/kumari2.632885e4c69bb37e238f.jpg",
     "static/media/logo.png": "/pjsy/static/media/logo.ca458952ee198b5e436b.png",
-    "static/media/donateLogo.svg": "/pjsy/static/media/donateLogo.544dbd2e2f53fab29faa1f8eec376a30.svg",
+    "static/media/donateLogo.svg": "/pjsy/static/media/donateLogo.3fe07e0a6b2999a8458d32dee5a6a2c1.svg",
     "index.html": "/pjsy/index.html",
     "main.a3a4d468.css.map": "/pjsy/static/css/main.a3a4d468.css.map",
-    "main.3c8aeba2.js.map": "/pjsy/static/js/main.3c8aeba2.js.map"
+    "main.cca791b9.js.map": "/pjsy/static/js/main.cca791b9.js.map"
   },
   "entrypoints": [
     "static/css/main.a3a4d468.css",
-    "static/js/main.3c8aeba2.js"
+    "static/js/main.cca791b9.js"
   ]
 }
