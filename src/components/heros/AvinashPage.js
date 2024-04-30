@@ -9,6 +9,51 @@ import avinash5 from '../images/Heros/avinash/avinash9.jpg';
 import avinash6 from '../images/Heros/avinash/avinash4.jpg';
 import avinash7 from '../images/Heros/avinash/avinash7.jpg';
 import '../../index.css';
+import { motion } from 'framer-motion';
+
+const upvariants = {
+    initial: {
+        y: 30,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+        }
+    }
+};
+
+
+const leftVarient = {
+    initial: {
+        x: -20,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+        }
+    }
+}
+
+const rightVarient = {
+    initial: {
+        x: 20,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.2
+        }
+    }
+};
 
 const AvinashPage = () => {
     return (
@@ -16,15 +61,15 @@ const AvinashPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <div className='each-subhead text-center my-3' >
+                    <motion.div variants={upvariants} initial="initial" whileInView="animate" className='each-subhead text-center my-3' >
                         Rising from Ashes: The Avinash Mahato Story
-                    </div>
-                    <div className='quotes-head text-center'>“Avinash’s existence was etched in shadows” </div>
+                    </motion.div>
+                    <motion.div variants={upvariants} initial="initial" whileInView="animate" className='quotes-head text-center'>“Avinash’s existence was etched in shadows” </motion.div>
                     <Col lg={4} className='p-2 d-flex align-items-center justify-content-center'>
-                        <Image src={avinashtop} alt="avinash img 11" fluid rounded />
+                        <motion.img className='img-fluid rounded' src={avinashtop} alt="avinash img 11" variants={leftVarient} initial="initial" whileInView="animate" />
                     </Col>
                     <Col lg={8}>
-                        <div className='lead pt-4'>
+                        <motion.div variants={rightVarient} initial="initial" whileInView="animate" className='lead pt-4'>
                             <strong><p>In the heart of a forgotten village, where poverty clung to every mud-brick wall, Avinash Mahato’s life unfolded like a tattered scroll. His father, a drunken specter, had sold their ancestral land, leaving the family adrift in a sea of deprivation. His mother, a silent warrior, stitched together their survival with frayed threads of love and resilience.
                                 Avinash’s existence was etched in shadows - the forgotten child of a forsaken corner house. The Tharu community, belittled and excommunicated, whispered tales of their misfortune. Yet, within this desolation, a spark flickered - <strong><span style={{ color: "#124076" }}> a hunger for knowledge, a thirst for learning and a desire for escape</span></strong>. There come the Jesuits of Patna Province - their presence like a
                                 celestial alignment. Three JESUITS of purpose, their cassocks billowing with hope. They saw Avinash’s
@@ -34,7 +79,7 @@ const AvinashPage = () => {
                                 parched earth after rain. His energy, once scattered, found rhythm - a channeling of purpose.
                                 Computers hummed under his fingertips, and Tally sheets danced to his command.</p></strong>
 
-                        </div>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container>
@@ -43,7 +88,7 @@ const AvinashPage = () => {
                     <Container className="d-flex align-items-center justify-content-center">
                         <Row className='d-flex align-items-center justify-content-center '>
                             <Col lg={6} md={12} sm={12} xs={12} className='lead pt-lg-3 d-flex align-items-center justify-content-center'>
-                                <div>
+                                <motion.div variants={leftVarient} initial="initial" whileInView="animate">
                                     <strong>
                                         <p>But the agreement weighed heavy. He would halt his own studies, dedicating a year
                                             to service. The center became his sanctuary - a place where bytes and balance sheets intertwined.
@@ -54,13 +99,13 @@ const AvinashPage = () => {
                                             hurt.
                                         </p>
                                     </strong>
-                                </div>
+                                </motion.div>
                             </Col>
                             <Col lg={3} md={6} sm={6} xs={6} className='mb-2 p-4 d-flex align-items-center justify-content-center'>
-                                <Image src={avinash7} alt="avinash img 1" className="img-fluid" rounded />
+                                <motion.img className='img-fluid rounded' src={avinash7} alt="avinash img 1" variants={rightVarient} initial="initial" whileInView="animate" />
                             </Col>
                             <Col lg={3} md={6} sm={6} xs={6} className='d-flex p-4 align-items-center justify-content-center'>
-                                <Image src={avinash2} alt="avinash img 2" className="img-fluid" rounded />
+                                <motion.img className='img-fluid rounded' src={avinash2} alt="avinash img 2" variants={rightVarient} initial="initial" whileInView="animate" />
                             </Col>
                         </Row>
                     </Container>
@@ -70,11 +115,11 @@ const AvinashPage = () => {
             <Container className='mb-2'>
                 <Row>
                     <Col lg={4} className='px-4 d-flex align-items-center justify-content-center'>
-                        <Image src={avinash5} alt="avinash img 1" className="img-fluid" rounded />
+                        <motion.img className='img-fluid rounded' src={avinash5} alt="avinash img 1" variants={leftVarient} initial="initial" whileInView="animate" />
                     </Col>
 
                     <Col lg={8}>
-                        <div className='lead px-2  py-2'>
+                        <motion.div variants={rightVarient} initial="initial" whileInView="animate" className='lead px-2  py-2'>
                             <strong>
                                 <p>
                                     Challenges loomed. Poverty gnawed at his dreams. The internal battle—the need to prove himself,
@@ -89,32 +134,32 @@ const AvinashPage = () => {
                                     His footsteps, once hesitant, now imprinted the path for others. Poverty no longer
                                     defined him; it fueled his ascent. And as he balanced ledgers and dreams, he whispered,
                                     <strong><span style={{ color: "#124076" }}>“I am enough”</span>.</strong></p></strong>
-                        </div>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container >
-            <div className='text-center mb-3 quotes-headblue'>~ The Motivating Moments Of Avinash Mahato ~</div>
+            <motion.div variants={upvariants} initial="initial" whileInView="animate" className='text-center mb-3 quotes-headblue'>~ The Motivating Moments Of Avinash Mahato ~</motion.div>
             <Container className="d-flex align-items-center justify-content-center flex-column">
                 <Row className="d-flex align-items-center justify-content-center ">
                     <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
-                        <Image src={avinash3} fluid rounded alt="avinash Image 5" className=" mb-2" />
+                        <motion.img src={avinash3} fluid rounded alt="avinash Image 5" className="img-fluid rounded mb-2" variants={leftVarient} initial="initial" whileInView="animate" />
                     </Col>
                     <Col lg={4} md={4} sm={4} xs={6} className="d-flex justify-content-center">
-                        <Image src={avinash6} fluid rounded alt="avinash Image 6" className=" mb-2" />
+                        <motion.img src={avinash6} fluid rounded alt="avinash Image 6" className="img-fluid rounded mb-2" variants={leftVarient} initial="initial" whileInView="animate" />
                     </Col>
                     <Col lg={4} md={4} sm={4} xs={8} className="d-flex justify-content-center">
-                        <Image src={avinash1} fluid rounded alt="avinash img 7" className="img-fluid mb-2" />
+                        <motion.img src={avinash1} fluid rounded alt="avinash img 7" className="img-fluid rounded mb-2" variants={leftVarient} initial="initial" whileInView="animate" />
                     </Col>
                 </Row>
                 <Row>
                     <Col lg={12}>
-                        <div className='quotes-head px-1 text-center mb-4 mt-2 px-lg-5'>
+                        <motion.div variants={upvariants} initial="initial" whileInView="animate" className='quotes-head px-5 text-center mb-4 mt-2 px-lg-5'>
                             <h5>In the quiet of night, the Jesuits watched, a constellation of pride. Avinash’s
                                 transformation was their symphony, the notes of grace, resilience, and hope. For,
                                 in the heart of a forgotten village, a brand was born - one that defied poverty,
                                 embraced vulnerability, and dared to dream.
                             </h5>
-                        </div>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container>
