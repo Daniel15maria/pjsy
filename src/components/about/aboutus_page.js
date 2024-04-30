@@ -6,6 +6,7 @@ import FullMissVissPage from './Full_Miss_Viss_Page';
 import AboutDec from './aboutDecPage';
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 
 export const AboutUsPage = () => {
     return (

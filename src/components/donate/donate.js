@@ -9,9 +9,25 @@ import { motion } from 'framer-motion';
 
 
 
+
+const upvariants = {
+    initial: {
+        y: 30,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+        }
+    }
+};
+
+
 const leftVarient = {
     initial: {
-        x: -500,
+        x: -20,
         opacity: 0,
     },
     animate: {
@@ -19,14 +35,13 @@ const leftVarient = {
         opacity: 1,
         transition: {
             duration: 1,
-            staggerChildren: 0.5
         }
     }
 }
 
 const rightVarient = {
     initial: {
-        x: 500,
+        x: 20,
         opacity: 0,
     },
     animate: {
@@ -37,7 +52,6 @@ const rightVarient = {
             staggerChildren: 0.2
         }
     }
-
 };
 
 

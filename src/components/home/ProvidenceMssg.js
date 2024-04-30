@@ -5,9 +5,25 @@ import topleft1 from '../images/topleft1.png';
 import director from '../images/director.png';
 import { motion } from 'framer-motion';
 
+
+const upvariants = {
+    initial: {
+        y: 30,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+        }
+    }
+};
+
+
 const leftVarient = {
     initial: {
-        x: -500,
+        x: -20,
         opacity: 0,
     },
     animate: {
@@ -15,14 +31,13 @@ const leftVarient = {
         opacity: 1,
         transition: {
             duration: 1,
-            staggerChildren: 0.1
         }
     }
 }
 
 const rightVarient = {
     initial: {
-        x: 500,
+        x: 20,
         opacity: 0,
     },
     animate: {
@@ -33,23 +48,8 @@ const rightVarient = {
             staggerChildren: 0.2
         }
     }
-
 };
 
-const upvariants = {
-    initial: {
-        y: 50,
-        opacity: 0,
-    },
-    animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.5,
-            staggerChildren: 0.1,
-        }
-    }
-};
 
 export const ProvidenceMssg = () => {
     return (
@@ -69,9 +69,10 @@ export const ProvidenceMssg = () => {
                     </Row>
                     <Row>
                         <Col lg={4} md={12} sm={12} className='d-flex align-items-center justify-content-center'>
-
-                            <Image fluid className='dir-img mb-3' src={director} alt="directors mssg" />
-
+                            <motion.div variants={leftVarient} initial="initial" animate="animate">
+                                <motion.img className='dir-img mb-3 img-fluid' src={director} alt="directors mssg"
+                                    variants={leftVarient} initial="initial" animate="animate" />
+                            </motion.div>
                         </Col>
                         <Col lg={8} md={12} sm={12} className='h5 d-flex align-items-center'>
                             <motion.div variants={rightVarient} initial="initial" whileInView="animate">

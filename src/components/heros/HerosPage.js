@@ -53,9 +53,9 @@ const HerosPage = () => {
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
             <Container>
                 <Row>
-                    <motion.div variants={upvariants} initial="initial" animate="animate" className='each-head d-flex justify-content-center my-4'>Heroes Stories</motion.div>
+                    <motion.div variants={upvariants} initial="initial" whileInView="animate" className='each-head d-flex justify-content-center my-4 text-center'>Heroes Stories</motion.div>
                 </Row>
-                <motion.div variants={upvariants} initial="initial" animate="animate">
+                <motion.div variants={upvariants} initial="initial" whileInView="animate">
                     {cardData.map((card, index) => (
                         <CardContainer key={index} delay={index * 0.9} card={card} />
                     ))}
@@ -69,17 +69,17 @@ const HerosPage = () => {
 const CardContainer = ({ card, delay }) => {
     const navigate = useNavigate();
     return (
-        <motion.div key={card.title} variants={upvariants} initial="initial" animate="animate" transition={{ duration: 0.5, delay }}>
+        <motion.div key={card.title} variants={upvariants} initial="initial" whileInView="animate" transition={{ duration: 0.5, delay }}>
             <Card className="mb-3">
                 <Card.Body className="d-flex flex-column flex-lg-row">
                     <Card.Img src={card.img} style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} className="align-self-center ms-lg-1 mx-md-4 mb-3 mb-md-0" />
                     <div className="d-flex flex-column justify-content-between">
                         <div>
-                            <Card.Title className='mt-md-2'>{card.title}</Card.Title>
+                            <Card.Title className='mt-md-2' style={{ fontFamily: "Inknut Antiqua" }}>{card.title}</Card.Title>
                             <Card.Text><p>{card.text}</p></Card.Text>
                         </div>
                         <div className="text-end mt-3 mt-lg-0">
-                            <Button variant="primary" onClick={() => navigate(card.heroUrl)}>{card.buttonText}<FaArrowRight className='ms-1 mb-1' /></Button>
+                            <Button variant="primary" onClick={() => navigate(card.heroUrl)}><strong>{card.buttonText}</strong><FaArrowRight className='ms-1 mb-1' /></Button>
                         </div>
                     </div>
                 </Card.Body>
