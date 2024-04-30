@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/pjsy/static/css/main.86add254.css",
-    "main.js": "/pjsy/static/js/main.1ca7ca14.js",
+    "main.js": "/pjsy/static/js/main.98053412.js",
     "static/media/herosimg.png": "/pjsy/static/media/herosimg.cdf44c45f2b6e1774a26.png",
     "static/media/progimg.png": "/pjsy/static/media/progimg.6cdb4d1391dac99168ec.png",
     "static/media/galleryimg.png": "/pjsy/static/media/galleryimg.7d6bd501f0540d3d63fa.png",
     "static/media/car3.jpg": "/pjsy/static/media/car3.72f3b2598e300bd5d94b.jpg",
     "static/media/donateimg.png": "/pjsy/static/media/donateimg.39d970373782286a4d29.png",
-    "static/media/prog3.png": "/pjsy/static/media/prog3.271cb988e5b5124cf2e3.png",
+    "static/media/aboutimg.png": "/pjsy/static/media/aboutimg.e1c6c5c1fcad09c63909.png",
     "static/media/magis1.png": "/pjsy/static/media/magis1.5bc192f802ba2faa2066.png",
-    "static/media/aboutimg.png": "/pjsy/static/media/aboutimg.782f9343776b3fedbed1.png",
     "static/media/vismis.png": "/pjsy/static/media/vismis.ec068f9fe217c7ab2abb.png",
     "static/media/car1.png": "/pjsy/static/media/car1.9b05391866758d9e2f94.png",
     "static/media/magis3.png": "/pjsy/static/media/magis3.91a8b8118d5af9d4c892.png",
-    "static/media/AbtDesc.png": "/pjsy/static/media/AbtDesc.8d12d780a6afd0313d55.png",
+    "static/media/AbtDesc.png": "/pjsy/static/media/AbtDesc.2bcc28377b46cc85f06f.png",
     "static/media/prog1.png": "/pjsy/static/media/prog1.695a0518a80d74eb9818.png",
     "static/media/img1.png": "/pjsy/static/media/img1.fac76301f2e86f2c5f69.png",
     "static/media/kumari5.jpg": "/pjsy/static/media/kumari5.7a6e015d3e7dcb475d9d.jpg",
     "static/media/img2.png": "/pjsy/static/media/img2.7f9ae469ac0b89f9cd4f.png",
     "static/media/kumari7.jpg": "/pjsy/static/media/kumari7.9c62afcef707b5fd329d.jpg",
     "static/media/img3.png": "/pjsy/static/media/img3.b595af20a8316fa230cf.png",
+    "static/media/prog3.png": "/pjsy/static/media/prog3.64da5c18f1bc548c8917.png",
+    "static/media/prog3a.png": "/pjsy/static/media/prog3a.5f817fff28c8c2d80090.png",
     "static/media/avinash3.jpg": "/pjsy/static/media/avinash3.d5e3d0b103b3666d3915.jpg",
     "static/media/avinash4.jpg": "/pjsy/static/media/avinash4.2c98a5488a56ea40b65e.jpg",
     "static/media/sainuma4.png": "/pjsy/static/media/sainuma4.de7e251adcf4ca9c1238.png",
@@ -109,10 +110,10 @@
     "static/media/logo.png": "/pjsy/static/media/logo.ca458952ee198b5e436b.png",
     "index.html": "/pjsy/index.html",
     "main.86add254.css.map": "/pjsy/static/css/main.86add254.css.map",
-    "main.1ca7ca14.js.map": "/pjsy/static/js/main.1ca7ca14.js.map"
+    "main.98053412.js.map": "/pjsy/static/js/main.98053412.js.map"
   },
   "entrypoints": [
     "static/css/main.86add254.css",
-    "static/js/main.1ca7ca14.js"
+    "static/js/main.98053412.js"
   ]
 }
