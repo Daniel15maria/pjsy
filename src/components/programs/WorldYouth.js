@@ -60,7 +60,7 @@ const YouthMinistry = () => {
 
 
         <div className='justify-text'>
-            <div style={{ backgroundColor: '#F6ECDA' }} >
+            <div style={{ backgroundColor: '#F6ECDA' }} className='px-2' >
 
                 <Container className='d-flex justify-content-center align-items-center'>
 

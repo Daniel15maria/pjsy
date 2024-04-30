@@ -57,7 +57,7 @@ export const ProvidenceMssg = () => {
             <div className='overlap-group'>
                 <Image className="wave-left1 d-none d-sm-none d-md-none d-lg-block" alt="left1" src={topleft1} />
             </div>
-            <section className='d-flex align-items-center justify-content-center'>
+            <section className='d-flex align-items-center justify-content-center px-2'>
                 <Container>
                     <Row className='mb-3'>
                         <Col lg={4} md={0} sm={0} xs={0}>
@@ -69,10 +69,10 @@ export const ProvidenceMssg = () => {
                     </Row>
                     <Row>
                         <Col lg={4} md={12} sm={12} className='d-flex align-items-center justify-content-center'>
-                            <motion.div variants={leftVarient} initial="initial" animate="animate">
-                                <motion.img className='dir-img mb-3 img-fluid' src={director} alt="directors mssg"
-                                    variants={leftVarient} initial="initial" animate="animate" />
-                            </motion.div>
+
+                            <motion.img className='dir-img mb-3 img-fluid' src={director} alt="directors mssg"
+                                variants={leftVarient} initial="initial" whileInView="animate" />
+
                         </Col>
                         <Col lg={8} md={12} sm={12} className='h5 d-flex align-items-center'>
                             <motion.div variants={rightVarient} initial="initial" whileInView="animate">

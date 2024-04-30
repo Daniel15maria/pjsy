@@ -91,6 +91,7 @@ header {
 
 .each-head2 {
   color: #487D49;
+
   font-family: "Inknut Antiqua";
   font-size: 56px;
   font-style: normal;
@@ -153,6 +154,7 @@ header {
   .each-head,
   .each-head2 {
     font-size: 36px !important;
+
   }
 
   .each-subhead2,
@@ -175,7 +177,7 @@ header {
 
   .each-subhead2,
   .each-subhead {
-    font-size: calc(24px - (641px - 100vw) / 30);
+    font-size: 24px !important;
   }
 
   .quotes-head,
@@ -193,7 +195,7 @@ header {
 
   .each-subhead2,
   .each-subhead {
-    font-size: calc(26px - (768px - 100vw) / 30);
+    font-size: 26px !important;
   }
 
   .quotes-head,
@@ -211,7 +213,7 @@ header {
 
   .each-subhead2,
   .each-subhead {
-    font-size: calc(30px - (992px - 100vw) / 30);
+    font-size: 30px !important;
   }
 
   .quotes-head,

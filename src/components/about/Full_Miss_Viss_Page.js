@@ -21,7 +21,7 @@ const upvariants = {
 
 const FullMissVissPage = () => {
     return (
-        <section id="vission" className='d-flex align-items-center justify-content-center' style={{ backgroundColor: "#124076", color: "white" }}>
+        <section id="vission" className='d-flex align-items-center justify-content-center px-2' style={{ backgroundColor: "#124076", color: "white" }}>
 
             <div className="d-flex align-items-center justify-content-center">
                 <motion.div variants={upvariants} initial="initial" whileInView="animate" >

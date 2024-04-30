@@ -38,7 +38,7 @@ const rightVarient = {
 
 const AboutDec = () => {
   return (
-    <section className="d-flex align-items-center justify-content-center">
+    <section className="d-flex align-items-center justify-content-center px-2">
       <Container>
         <Row>
           <motion.div

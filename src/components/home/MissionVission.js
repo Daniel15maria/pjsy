@@ -55,7 +55,7 @@ const rightVarient = {
 export const MissionVission = () => {
     const navigate = useNavigate();
     return (
-        <section style={{ backgroundColor: '#F6ECDA' }} className="d-flex align-items-center justify-content-center flex-column">
+        <section style={{ backgroundColor: '#F6ECDA' }} className="d-flex align-items-center justify-content-center flex-column px-2">
 
             <Container>
                 <Row className='justify-content-start'>
@@ -100,7 +100,7 @@ export const MissionVission = () => {
                             <Image fluid src={visimg} />
                         </motion.div>
                     </Col>
-                    <Col lg={8} className='h5'>
+                    <Col lg={8} className='h5 mt-3'>
                         <motion.div variants={rightVarient} initial="initial" whileInView="animate">
                             <p>
                                 The mission of the Patna Jesuits is to empower the youth, especially the unorganized youth,

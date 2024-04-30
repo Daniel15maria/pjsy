@@ -54,8 +54,8 @@ const rightVarient = {
 const YouthMinistry = () => {
     return (
         <div className='justify-text '>
-            <div style={{ backgroundColor: '#F6ECDA' }}>
-                <Container className='py-5'>
+            <div style={{ backgroundColor: '#F6ECDA' }} className='px-2'>
+                <Container className='py-4'>
                     <Row className='justify-content-center mt-5'>
                         <motion.div variants={upvariants} initial="initial" whileInView="animate">
                             <div className='each-subhead2 text-center'>YOUTH MINISTRY COMMISION MEETING</div>

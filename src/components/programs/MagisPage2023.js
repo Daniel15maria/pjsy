@@ -54,7 +54,7 @@ const rightVarient = {
 const MagisPage2023 = () => {
     return (
         <div className='justify-text'>
-            <div style={{ backgroundColor: '#F6ECDA' }}>
+            <div style={{ backgroundColor: '#F6ECDA' }} className='px-2'>
                 <Container className='pt-4'>
                     <Row className='mt-5 each-head2 justify-content-center text-center'>
                         <motion.div variants={upvariants} initial="initial" whileInView="animate">
@@ -92,8 +92,9 @@ const MagisPage2023 = () => {
                         </Col>
                     </Row>
                 </Container>
-                <Footer />
+
             </div>
+            <Footer />
         </div>
     );
 }

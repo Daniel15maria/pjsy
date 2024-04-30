@@ -54,7 +54,7 @@ const rightVarient = {
 const AnimatorPage = () => {
     return (
         <div className=''>
-            <div style={{ backgroundColor: '#F6ECDA' }}>
+            <div style={{ backgroundColor: '#F6ECDA' }} className='px-2'>
                 <Container className='pt-2 d-flex justify-content-center align-items-center'>
                     <Row className='mt-5'>
                         <motion.div variants={upvariants} initial="initial" whileInView="animate">

@@ -7,12 +7,7 @@ const HistoryComp = () => {
   return (
     <Container>
       <div className='each-head mt-4 d-flex justify-content-center'>History</div>
-      <div className='my-4'>
-
-
-
-
-
+      <div className='my-4 '>
         <VerticalTimeline lineColor={"black"}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

@@ -51,7 +51,7 @@ const HerosPage = () => {
     return (
         <div className='justify-text'>
             <img alt="mission img" src={herosbg} className="img-fluid w-100" />
-            <Container>
+            <Container className='px-3'>
                 <Row>
                     <motion.div variants={upvariants} initial="initial" whileInView="animate" className='each-head d-flex justify-content-center my-4 text-center'>Heroes Stories</motion.div>
                 </Row>

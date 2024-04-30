@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
 import donatebg from '../images/donateimg.png';
+import donateLogo from '../images/donateLogo.svg';
 import '../../index.css';
 import { Footer } from '../resuable/footer';
 import { FaUser, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
-
-
-
 
 const upvariants = {
     initial: {
@@ -120,10 +117,16 @@ export const Donate = () => {
     return (
         <div className='justify-text'>
             <img alt="mission img" src={donatebg} className="img-fluid w-100" />
-            <Container>
-                <Row>
-                    <motion.div variants={leftVarient} initial="initial" whileInView="animate" className='each-head my-4'>Donate Now</motion.div>
+            <Container className='px-2'>
+                <Row className='align-items-center'>
+                    <Col xs={12} className='d-inline-flex align-items-center'>
+                        <motion.div variants={leftVarient} initial="initial" whileInView="animate" className='each-head my-4' style={{ lineHeight: '1.5' }}>
+                            <img src={donateLogo} width='60' height='60' alt="donate logo" className='me-2 mb-3' />
+                            Donate Now
+                        </motion.div>
+                    </Col>
                 </Row>
+
                 <Row>
                     <Col md={6} lg={6}>
                         <motion.div className='green-box h5 p-5' variants={leftVarient} initial="initial" whileInView="animate" >
