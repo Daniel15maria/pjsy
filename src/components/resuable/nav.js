@@ -5,6 +5,8 @@ import logo from '../images/logo.png';
 import '../../index.css';
 import { useNavigate } from 'react-router-dom';
 
+
+
 export const NavBar = () => {
     const navigate = useNavigate();
     const [lgShow, setLgShow] = useState(false);
@@ -266,7 +268,7 @@ export const NavBar = () => {
                     />
                     <strong className="me-auto"> PJSYM </strong>
                 </Toast.Header>
-                <Toast.Body>{status.split('\n').map((line, index) => <div key={index}>{line}</div>)}</Toast.Body>
+                <Toast.Body><strong>{status.split('\n').map((line, index) => <div key={index}>{line}</div>)}</strong></Toast.Body>
             </Toast>
         </Navbar>
     );

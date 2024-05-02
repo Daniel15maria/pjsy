@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Spinner, Toast } from 'react-bootstrap';
 import donatebg from '../images/donateimg.png';
 import donateLogo from '../images/donateLogo.svg';
 import '../../index.css';
@@ -52,6 +52,27 @@ const rightVarient = {
 };
 
 
+
+const ToastMessage = ({ showToast, onClose, toastVariant, status }) => (
+    <Toast
+        show={showToast}
+        onClose={onClose}
+        style={{
+            position: 'fixed',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 9999,
+            minWidth: '300px',
+            textAlign: 'center'
+        }}>
+        <Toast.Header closeButton={true} className={`bg-${toastVariant} text-white`}>
+            <strong className="me-auto"> PJSYM </strong>
+        </Toast.Header>
+        <Toast.Body><strong>{status.split('\n').map((line, index) => <div key={index}>{line}</div>)}</strong></Toast.Body>
+    </Toast>
+);
+
 export const Donate = () => {
     const [validated, setValidated] = useState(false);
     const [name, setName] = useState('');
@@ -62,6 +83,15 @@ export const Donate = () => {
     const [city, setCity] = useState('');
     const [state, setState] = useState('');
     const [country, setCountry] = useState('');
+    const [showToast, setShowToast] = useState(false);
+    const [toastVariant, setToastVariant] = useState('success');
+    const [status, setStatus] = useState('');
+
+    const toggleToast = (variant) => {
+        setShowToast(true);
+        setToastVariant(variant);
+        window.scrollTo(0, 0);
+    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -99,11 +129,17 @@ export const Donate = () => {
                     setCity(''); // Clear city field
                     setState(''); // Clear state field
                     setCountry('');
+                    setStatus("Donation request sent successfully!\nYou will be contacted soon...");
+                    toggleToast('success');
                 } else {
                     console.error('Failed to submit form:', response.statusText);
+                    setStatus("Failed to send your donation request!\nCheck your internet connection\nor try again later.");
+                    toggleToast('danger');
                 }
             } catch (error) {
                 console.error('Error submitting form:', error.message);
+                setStatus("Failed to send your donation request!\nCheck your internet connection and try again later.");
+                toggleToast('danger');
             }
             finally {
                 setLoading(false); // Stop loading animation
@@ -260,6 +296,13 @@ export const Donate = () => {
                     </Col>
                 </Row>
             </Container>
+            <ToastMessage
+                showToast={showToast}
+                onClose={() => setShowToast(false)}
+                toastVariant={toastVariant}
+                status={status}
+
+            />
             <Footer />
         </div>
     );
