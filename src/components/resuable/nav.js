@@ -157,7 +157,7 @@ export const NavBar = () => {
                             CONTACT INFORMATION
                         </h3>
                         <div className="d-flex align-items-start mb-3">
-                            <FaUser className="me-2" />
+                            <FaUser className="me-2 mt-1" />
                             <span>Fr. Anthony Prakash SJ</span>
                         </div>
                         <div className="d-flex align-items-center mb-3">
@@ -165,7 +165,7 @@ export const NavBar = () => {
                             <span>+91 9871528965 <br></br>+91 9939447576</span>
                         </div>
                         <div className="d-flex align-items-center mb-3">
-                            <FaEnvelope className="me-2" />
+                            <FaEnvelope className="me-2 mt-1" />
                             <span>pjsym1975@gmail.com</span>
                         </div>
                         <div className="d-flex align-items-center">

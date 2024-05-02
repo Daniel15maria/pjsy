@@ -4,13 +4,16 @@ import { FaFacebook, FaTwitter, FaGoogle, FaYoutube, FaInstagram, FaPhone } from
 import { Person, Envelope, Telephone, Location, Pin } from 'react-bootstrap-icons';
 import logo from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
+import '../../index.css';
+import { FaUser, FaMapMarkerAlt } from 'react-icons/fa';
+
 
 export const Footer = () => {
     const navigate = useNavigate();
     return (
         <footer className='px-2'>
             <Container className='py-4'>
-                <Row>
+                <Row className='d-flex align-items-center justify-content-start'>
                     <Col xs="auto">
                         <div className='d-flex align-items-center justify-content-start'><img src={logo} alt="logo" /></div>
                     </Col>
@@ -20,7 +23,7 @@ export const Footer = () => {
                 </Row>
                 <Row className='mt-2'>
                     <Col lg={5} sm={12}>
-                        <div>
+                        <div className='justify-text'>
                             The Patna Jesuit Society Youth Ministry, established in 1975, is dedicated to empowering and supporting the youth of Bihar and Uttar Pradesh.
                             Through programs and initiatives focused on personal growth and community engagement,
                             we aim to ignite dynamism and creativity in young individuals, fostering positive change in society.
@@ -50,15 +53,24 @@ export const Footer = () => {
                     </Col>
                     <Col lg={4} sm={12} xs={12}>
                         <div>
-                            <ul style={{ listStyleType: 'none' }}>
-                                <li><Person />Fr. Anthony Prakash SJ</li>
-                                <li><Telephone /> +91 9871528965</li>
-                                <li><Telephone />+91 9939447576</li>
-                                <br></br>
-                                <li>Provincial Residence,</li>
-                                <li> St. Xavier's - West Gandhi Maidan,</li>
-                                <li> Patna – 800 001</li>
-                            </ul>
+                            <div className="d-flex align-items-center mb-3">
+                                <FaUser className="me-3" />
+                                <span>Fr. Anthony Prakash SJ</span>
+                            </div>
+                            <div className="d-flex align-items-center mb-3">
+                                <FaPhone className="me-3" />
+                                <span>+91 9871528965 <br />+91 9939447576</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <FaMapMarkerAlt className="me-3" />
+                                <span>
+                                    St. Xavier’s,
+                                    <br />
+                                    West Gandhi Maidan,
+                                    <br />
+                                    Patna – 800 001
+                                </span>
+                            </div>
                         </div>
                     </Col>
                 </Row>
